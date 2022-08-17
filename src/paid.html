@@ -29,10 +29,21 @@
             >Please use the following control number, so as you can download
             your form</h
           >
-          <h
-            class="select-all tracking-widest lining-nums text-3xl font-bold p-6 bg-sky-100 border-2 border-dashed rounded border-crvsblue-700 text-crvsblue-800"
-            >991270416395</h
-          >
+          <div class="space-y-2 flex flex-col">
+
+              <button
+                
+                onclick="copyMeOnClipboard()"
+                class="tracking-widest lining-nums text-3xl font-bold p-6 bg-sky-100 border-2 border-dashed rounded border-crvsblue-700 text-crvsblue-800"
+              >
+                <h id="controlnumber">
+                    991270416395
+                </h>
+              </button>
+    
+              <p id="writeText" class="text-red-700 text-center font-medium"></p>
+          </div>
+
           <button
             class="uppercase px-4 flex space-x-2 bg-crvsblue-700 py-4 text-white font-semibold rounded hover:border hover:bg-transparent hover:border-crvsblue-700 hover:text-crvsblue-700"
             type="button"
@@ -56,5 +67,33 @@
         </div>
       </div>
     </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/index.js"></script>
+
+    <script>
+    //   const copyText = document.getElementById("controlnumber");
+    //   const showText = document.querySelector("p");
+    //   const showText = document.querySelector("p");
+
+
+      function copyMeOnClipboard() {
+        var r = document.createRange();
+        var text = document.getElementById("writeText");
+        r.selectNode(document.getElementById("controlnumber"));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        console.log("copy")
+        text.innerHTML = "The control number is copied !"
+      }
+      991270416395
+    </script>
   </body>
 </html>
