@@ -1,110 +1,81 @@
-$(document).ready(function(){
- $("#parentNext").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#appId").removeClass("stepper-active");
-   $("#parentId").addClass("stepper-active ");
+$(document).ready(function () {
+  $("#parentNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#appId").removeClass("stepper-active");
+    $("#parentId").addClass("stepper-active ");
+    //    $(".mainstepper").attr("style", "height: 2060px");
+    $("#parentDiv").attr("style", "display:block");
+    $("#appDiv").attr("style", "display:none");
+    $("#appId").addClass("stepper-completed");
+    // $(".mainstepper").attr("style", "height: ");
+  });
 
-//    $(".mainstepper").attr("style", "height: 2060px");
+  $("#prevApp").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#parentId").removeClass("stepper-active");
+    $("#appId").addClass("stepper-active ");
 
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
+    $("#appDiv").attr("style", "display:block");
+    $("#parentDiv").attr("style", "display:none");
+    $("#appId").addClass("stepper-completed");
+  });
 
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#parentDiv").attr("style", "display:block");
+  $("#infoNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#parentId").removeClass("stepper-active");
+    $("#infoId").addClass("stepper-active ");
 
-   $("#appDiv").attr("style", "display:none");
-   $("#appId").addClass("stepper-completed");
+    $("#infoDiv").attr("style", "display:block");
+    $("#parentDiv").attr("style", "display:none");
+    $("#parentId").addClass("stepper-completed");
+  });
 
-//    console.log("something is happening")
- });
+  $("#infodecNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#infoId").removeClass("stepper-active");
+    $("#infodecId").addClass("stepper-active ");
 
- $("#prevApp").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#parentId").removeClass("stepper-active");
-   $("#appId").addClass("stepper-active ");
+    $("#infodecDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:none");
+    $("#infoId").addClass("stepper-completed");
+  });
 
-   //    $(".heightstepper").attr("style", "height: 2010px");
+  $("#prevParent").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#infoId").removeClass("stepper-active");
+    $("#parentId").addClass("stepper-active ");
 
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
+    $("#parentDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:none");
+  });
 
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#appDiv").attr("style", "display:block");
+  $("#prevInfo").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#infodecId").removeClass("stepper-active");
+    $("#infoId").addClass("stepper-active ");
 
-   $("#parentDiv").attr("style", "display:none");
-   $("#appId").addClass("stepper-completed");
+    $("#infoDiv").attr("style", "display:block");
+    $("#infodecDiv").attr("style", "display:none");
+  });
 
-   //    console.log("something is happening")
- });
+  $("#prevInfodec").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#sumId").removeClass("stepper-active");
+    $("#infodecId").addClass("stepper-active ");
 
- $("#infoNext").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#parentId").removeClass("stepper-active");
-   $("#infoId").addClass("stepper-active ");
+    $("#infodecDiv").attr("style", "display:block");
+    $("#sumDiv").attr("style", "display:none");
+  });
 
-   //    $(".heightstepper").attr("style", "height: 2010px");
+  $("#sumNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#infodecId").removeClass("stepper-active");
+    $("#sumId").addClass("stepper-active ");
+    $("#sumDiv").attr("style", "display:block");
 
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
+    $("#infodecDiv").attr("style", "display:none");
+    $("#infodecId").addClass("stepper-completed");
+    $(".mainstepper").attr("style", "height: 5060px");
 
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#infoDiv").attr("style", "display:block");
-
-   $("#parentDiv").attr("style", "display:none");
-   $("#parentId").addClass("stepper-completed");
-
-   //    console.log("something is happening")
- });
-
- $("#infodecNext").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#infoId").removeClass("stepper-active");
-   $("#infodecId").addClass("stepper-active ");
-
-   //    $(".heightstepper").attr("style", "height: 2010px");
-
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
-
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#infodecDiv").attr("style", "display:block");
-
-   $("#infoDiv").attr("style", "display:none");
-   $("#infoId").addClass("stepper-completed");
-
-   //    console.log("something is happening")
- });
-
- $("#prevParent").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#infoId").removeClass("stepper-active");
-   $("#parentId").addClass("stepper-active ");
-
-   //    $(".heightstepper").attr("style", "height: 2010px");
-
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
-
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#parentDiv").attr("style", "display:block");
-
-   $("#infoDiv").attr("style", "display:none");
-//    $("#parentId").addClass("stepper-completed");
-
-   //    console.log("something is happening")
- });
-
- $("#prevInfo").click(() => {
-   document.getElementById("mainpage").scrollIntoView();
-   $("#infodecId").removeClass("stepper-active");
-   $("#infoId").addClass("stepper-active ");
-
-   //    $(".heightstepper").attr("style", "height: 2010px");
-
-   // $("#motherDiv").addClass(" slide-in-right animation fast");
-
-   // $("#childDiv").addClass(" slide-out-left animation fast");
-   $("#infoDiv").attr("style", "display:block");
-
-   $("#infodecDiv").attr("style", "display:none");
-//    $("#parentId").addClass("stepper-completed");
-
-   //    console.log("something is happening")
- });
-   
-})
+  });
+});

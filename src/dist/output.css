@@ -642,10 +642,6 @@ video {
   width: 1.5rem;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -780,8 +776,17 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
 }
 
 .text-center{
@@ -887,6 +892,10 @@ video {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:text-xl{
