@@ -61,20 +61,20 @@ $(document).ready(function () {
   $("#prevInfodec").click(() => {
     document.getElementById("mainpage").scrollIntoView();
     $("#sumId").removeClass("stepper-active");
-    $("#infodecId").addClass("stepper-active ");
+    $("#infoId").addClass("stepper-active ");
 
-    $("#infodecDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:block");
     $("#sumDiv").attr("style", "display:none");
   });
 
   $("#sumNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
-    $("#infodecId").removeClass("stepper-active");
+    $("#infoId").removeClass("stepper-active");
     $("#sumId").addClass("stepper-active ");
     $("#sumDiv").attr("style", "display:block");
 
-    $("#infodecDiv").attr("style", "display:none");
-    $("#infodecId").addClass("stepper-completed");
+    $("#infoDiv").attr("style", "display:none");
+    $("#infoId").addClass("stepper-completed");
     $(".mainstepper").attr("style", "height: 5060px");
 
   });
