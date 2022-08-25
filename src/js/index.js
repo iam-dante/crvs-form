@@ -4,8 +4,8 @@ $(document).ready(function () {
     $("#appId").removeClass("stepper-active");
     $("#parentId").addClass("stepper-active ");
     //    $(".mainstepper").attr("style", "height: 2060px");
-    $("#parentDiv").attr("style", "display:block");
     $("#appDiv").attr("style", "display:none");
+    $("#parentDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
@@ -15,8 +15,8 @@ $(document).ready(function () {
     $("#parentId").removeClass("stepper-active");
     $("#appId").addClass("stepper-active ");
 
-    $("#appDiv").attr("style", "display:block");
     $("#parentDiv").attr("style", "display:none");
+    $("#appDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
   });
 
@@ -25,8 +25,8 @@ $(document).ready(function () {
     $("#parentId").removeClass("stepper-active");
     $("#infoId").addClass("stepper-active ");
 
-    $("#infoDiv").attr("style", "display:block");
     $("#parentDiv").attr("style", "display:none");
+    $("#infoDiv").attr("style", "display:block");
     $("#parentId").addClass("stepper-completed");
   });
 
@@ -35,8 +35,8 @@ $(document).ready(function () {
     $("#infoId").removeClass("stepper-active");
     $("#infodecId").addClass("stepper-active ");
 
-    $("#infodecDiv").attr("style", "display:block");
     $("#infoDiv").attr("style", "display:none");
+    $("#infodecDiv").attr("style", "display:block");
     $("#infoId").addClass("stepper-completed");
   });
 
@@ -45,8 +45,8 @@ $(document).ready(function () {
     $("#infoId").removeClass("stepper-active");
     $("#parentId").addClass("stepper-active ");
 
-    $("#parentDiv").attr("style", "display:block");
     $("#infoDiv").attr("style", "display:none");
+    $("#parentDiv").attr("style", "display:block");
   });
 
   $("#prevInfo").click(() => {
@@ -54,8 +54,8 @@ $(document).ready(function () {
     $("#infodecId").removeClass("stepper-active");
     $("#infoId").addClass("stepper-active ");
 
-    $("#infoDiv").attr("style", "display:block");
     $("#infodecDiv").attr("style", "display:none");
+    $("#infoDiv").attr("style", "display:block");
   });
 
   $("#prevInfodec").click(() => {
@@ -63,17 +63,17 @@ $(document).ready(function () {
     $("#sumId").removeClass("stepper-active");
     $("#infoId").addClass("stepper-active ");
 
-    $("#infoDiv").attr("style", "display:block");
     $("#sumDiv").attr("style", "display:none");
+    $("#infoDiv").attr("style", "display:block");
   });
 
   $("#sumNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
     $("#infoId").removeClass("stepper-active");
     $("#sumId").addClass("stepper-active ");
-    $("#sumDiv").attr("style", "display:block");
-
+    
     $("#infoDiv").attr("style", "display:none");
+    $("#sumDiv").attr("style", "display:block");
     $("#infoId").addClass("stepper-completed");
     $(".mainstepper").attr("style", "height: 5060px");
 

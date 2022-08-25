@@ -959,11 +959,6 @@ video {
   min-height: 100vh !important;
 }
 
-.required:after {
-  content: "*";
-  color: red;
-}
-
 .hover\:border:hover{
   border-width: 1px;
 }
