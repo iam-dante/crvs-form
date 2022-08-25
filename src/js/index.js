@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#parentId").addClass("stepper-active ");
     //    $(".mainstepper").attr("style", "height: 2060px");
     $("#appDiv").attr("style", "display:none");
-    $("#parentDiv").attr("style", "display:block !important");
+    $("#parentDiv").attr("style", "display:inline-block !important");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
