@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
     <title>Conrol Number</title>
   </head>
-  <body class="bg-slate-100">
+  <body class="bg-slate-100 mx-auto px-24">
     <main class="min-h-screen px-2 lg:px-24">
       <div
         class="py-2 w-full flex-col flex justify-center items-center space-y-2"
@@ -25,28 +25,22 @@
         <div
           class="bg-white shadow-lg rounded-md px-12 flex justify-center py-16 flex-col items-center space-y-12"
         >
-
-        <div class="flex flex-col items-center space-y-2">
-
-          <h class="text-center text-lg"
-            >Please use the following control number to pay, so as you can be able download
-            your form</h
-          >
-          <h class="text-slate-500 ">Click the below number to copy it </h>
-        </div>
+          <div class="flex flex-col items-center space-y-2">
+            <h class="text-center text-lg"
+              >Please use the following control number to pay, so as you can be
+              able download your form</h
+            >
+            <h class="text-slate-500">Click the below number to copy it </h>
+          </div>
           <div class="space-y-2 flex flex-col">
+            <button
+              onclick="copyMeOnClipboard()"
+              class="tracking-widest lining-nums text-3xl font-bold p-6 bg-sky-100 border-2 border-dashed rounded border-crvsblue-700 text-crvsblue-800"
+            >
+              <h id="controlnumber"> 991270416395 </h>
+            </button>
 
-              <button
-                
-                onclick="copyMeOnClipboard()"
-                class="tracking-widest lining-nums text-3xl font-bold p-6 bg-sky-100 border-2 border-dashed rounded border-crvsblue-700 text-crvsblue-800"
-              >
-                <h id="controlnumber">
-                    991270416395
-                </h>
-              </button>
-    
-              <p id="writeText" class="text-red-700 text-center font-medium"></p>
+            <p id="writeText" class="text-red-700 text-center font-medium"></p>
           </div>
 
           <button
@@ -82,10 +76,9 @@
     <script src="./js/index.js"></script>
 
     <script>
-    //   const copyText = document.getElementById("controlnumber");
-    //   const showText = document.querySelector("p");
-    //   const showText = document.querySelector("p");
-
+      //   const copyText = document.getElementById("controlnumber");
+      //   const showText = document.querySelector("p");
+      //   const showText = document.querySelector("p");
 
       function copyMeOnClipboard() {
         var r = document.createRange();
@@ -95,10 +88,10 @@
         window.getSelection().addRange(r);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
-        console.log("copy")
-        text.innerHTML = "The control number is copied !"
+        console.log("copy");
+        text.innerHTML = "The control number is copied !";
       }
-      991270416395
+      991270416395;
     </script>
   </body>
 </html>

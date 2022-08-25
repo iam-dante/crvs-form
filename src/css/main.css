@@ -25,6 +25,16 @@
 .heightstepper{
   @apply min-h-screen !important
 }
+.stepper {
+  position: relative;
+  /* padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out; */
+}
 
 .stepper:not(.stepper-vertical) {
   display: -webkit-box;
@@ -37,7 +47,7 @@
 .stepper:not(.stepper-vertical) .stepper-content {
   position: absolute;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .stepper:not(.stepper-vertical) .stepper-step {
   -webkit-box-flex: 1;
@@ -88,6 +98,7 @@
   -ms-flex-pack: space-between;
 } */
 
+
 .stepper:not(.stepper-vertical) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +110,7 @@
 .stepper:not(.stepper-vertical) .stepper-content {
   position: absolute;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .stepper:not(.stepper-vertical) .stepper-step {
   -webkit-box-flex: 1;
@@ -166,13 +177,7 @@
     margin-bottom 0.3s ease-in-out, padding-top 0.3s ease-in-out,
     padding-bottom 0.3s ease-in-out;
 }
-.stepper-vertical .stepper-content-hide {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  height: 0 !important;
-}
+
 .stepper-vertical .stepper-head {
   padding: 1.5rem;
 }
@@ -227,3 +232,11 @@
 .stepper.stepper-mobile .stepper-content {
   top: 2.56rem;
 }
+.stepper-completed .stepper-head-icon {
+  background-color: #198754;
+}
+
+.stepper-content{
+  @apply pt-6 
+}
+
