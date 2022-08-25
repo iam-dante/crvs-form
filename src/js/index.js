@@ -75,7 +75,7 @@ $(document).ready(function () {
     $("#sumDiv").attr("style", "display:block");
     $("#infoDiv").attr("style", "display:none");
     $("#infoId").addClass("stepper-completed");
-    $(".mainstepper").attr("style", "height: 5060px");
+    // $(".mainstepper").attr("style", "height: 5060px");
 
   });
 

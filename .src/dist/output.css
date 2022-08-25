@@ -626,10 +626,6 @@ video {
   height: 24rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -775,6 +771,11 @@ video {
 .bg-slate-100{
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .bg-white{
