@@ -15,8 +15,8 @@ $(document).ready(function () {
     $("#parentId").removeClass("stepper-active");
     $("#appId").addClass("stepper-active ");
 
-    $("#parentDiv").attr("style", "display:none !important");
-    $("#appDiv").attr("style", "display:block");
+    $("#parentDiv").attr("style", "display:none ");
+    $("#appDiv").attr("style", "display:block !important");
     $("#appId").addClass("stepper-completed");
   });
 
