@@ -32,7 +32,7 @@
   line-height: 1.3;
   cursor: pointer;
 }
-.stepper:not(.stepper-vertical) {
+.stepper:not(.stepper-vertical) .stepper-content {
   position: absolute;
   width: 100%;
   padding: 1rem;
@@ -57,7 +57,7 @@
   -webkit-box-flex: 1;
   -ms-flex: auto;
   flex: auto;
-  height: 4.5rem;
+  height: 40px;
 }
 
 .stepper:not(.stepper-vertical) .stepper-step:first-child .stepper-head {
@@ -70,7 +70,33 @@
 .stepper-content {
   left: 0;
 }
-
+.stepper-head-icon,
+.stepper-head-text:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.stepper-head-icon {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: grey;
+  border-radius: 100%;
+  font-size: 0.875rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.stepper-head:focus {
+  outline: none;
+}
+.stepper-head-text:after {
+  font-size: 0.8rem;
+  content: attr(data-content);
+}
 *,
 ::before,
 ::after {
