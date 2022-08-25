@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#parentId").addClass("stepper-active ");
     //    $(".mainstepper").attr("style", "height: 2060px");
     $("#appDiv").attr("style", "display:none");
-    $("#parentDiv").attr("style", "display:block");
+    $("#parentDiv").attr("style", "display:block !important");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
@@ -15,7 +15,7 @@ $(document).ready(function () {
     $("#parentId").removeClass("stepper-active");
     $("#appId").addClass("stepper-active ");
 
-    $("#parentDiv").attr("style", "display:none");
+    $("#parentDiv").attr("style", "display:none !important");
     $("#appDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
   });
@@ -26,7 +26,7 @@ $(document).ready(function () {
     $("#infoId").addClass("stepper-active ");
 
     $("#parentDiv").attr("style", "display:none");
-    $("#infoDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:block !important");
     $("#parentId").addClass("stepper-completed");
   });
 
