@@ -822,11 +822,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .px-24{
   padding-left: 6rem;
   padding-right: 6rem;
@@ -849,14 +844,6 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .text-center{
@@ -974,13 +961,6 @@ video {
 
 .stepper {
   position: relative;
-  /* padding: 0;
-  margin: 0;
-  width: 100%;
-  list-style: none;
-  overflow: hidden;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out; */
 }
 
 .stepper:not(.stepper-vertical) {
@@ -1229,6 +1209,11 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:text-xl{
