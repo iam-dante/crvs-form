@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#parentId").addClass("stepper-active ");
     //    $(".mainstepper").attr("style", "height: 2060px");
     $("#appDiv").attr("style", "display:none");
-    $("#parentDiv").attr("style", "display:inline-block !important");
+    $("#parentDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
@@ -15,8 +15,8 @@ $(document).ready(function () {
     $("#parentId").removeClass("stepper-active");
     $("#appId").addClass("stepper-active ");
 
-    $("#parentDiv").attr("style", "display:none ");
-    $("#appDiv").attr("style", "display:block !important");
+    $("#parentDiv").attr("style", "display:none");
+    $("#appDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
   });
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
     $("#infoId").addClass("stepper-active ");
 
     $("#parentDiv").attr("style", "display:none");
-    $("#infoDiv").attr("style", "display:block !important");
+    $("#infoDiv").attr("style", "display:block");
     $("#parentId").addClass("stepper-completed");
   });
 
@@ -72,8 +72,8 @@ $(document).ready(function () {
     $("#infoId").removeClass("stepper-active");
     $("#sumId").addClass("stepper-active ");
     
-    $("#infoDiv").attr("style", "display:none");
     $("#sumDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:none");
     $("#infoId").addClass("stepper-completed");
     $(".mainstepper").attr("style", "height: 5060px");
 

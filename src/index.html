@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwindcss elements -->
     <link
@@ -50,7 +50,6 @@
                   >
                 </div>
 
-                
                 <form class="space-y-8">
                   <!-- first details -->
                   <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
@@ -372,18 +371,16 @@
           </li>
 
           <!-- parents details -->
-          
-          <div id="parentId" class="stepper-step">
+          <li id="parentId" class="stepper-step">
             <button class="stepper-head w-full" disabled>
               <span class="stepper-head-icon"> 2 </span>
               <span
-                class=" stepper-head-text text-sm md:text-xl uppercase text-black"
+                class="hidden md:block stepper-head-text text-sm md:text-xl uppercase text-black"
               >
                 parents details
               </span>
             </button>
 
-            <h>Something</h>
             <div id="parentDiv" class="stepper-content space-y-8">
               <div class="space-y-4">
                 <div class="border-b-2 border-crvsblue-700 py-2 px-4">
@@ -701,7 +698,7 @@
                 </form>
               </div>
             </div>
-          </div>
+          </li>
 
           <!-- infromant details -->
           <li id="infoId" class="stepper-step">
@@ -1676,9 +1673,9 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="./js/index.js"></script>
-
+    
     <!-- cnd script -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
