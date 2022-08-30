@@ -11,7 +11,7 @@
     class="flex flex-col space-y-4 h-auto w-full justify-center items-center py-12"
   >
     <button class="uppercase" type="button" id="download">download</button>
-    <div id="form" class="w-[800px] h-auto p-6 border border-black">
+    <div id="form" class="w-[793px] h-auto p-2 border border-black">
       <div class="space-y-4">
         <div class="w-full flex justify-center">
           <h class="uppercase text-xl font-bold"
@@ -78,22 +78,8 @@
           >
             <h> a.taarifa za muombaji (ijazwe na mtoa taarifa)</h>
           </div>
-          <div class="border-l border-b border-r border-black">
-            <div class="grid grid-cols-3 gap-6 px-2 py-4">
-              <!-- <label class="flex w-full items-baseline space-x-1">
-                <span class="font-medium text-sm">First Name: </span>
-                <input
-                  class="mt-1 h-8 border-b border-dotted border-black px-4"
-                />
-              </label>
-
-              <label class="flex w-full items-baseline space-x-2">
-                <span class="font-medium text-sm">Middle Name: </span>
-                <input
-                  class="mt-1 h-8 border-b border-dotted border-black px-4"
-                />
-              </label> -->
-
+          <div class="border-l border-b border-r border-black p-2">
+            <div class="grid grid-cols-3 gap-6 py-4">
               <label class="block w-full">
                 <span class="block text-sm font-light">
                   <span class="font-medium">Jina la kwanza /</span>
@@ -236,8 +222,8 @@
               </label>
 
               <label class="block w-full">
-                <span class="block text-sm font-light whitespace-nowrap">
-                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                <span class="block text-xs font-light whitespace-nowrap">
+                  <span class="font-medium">Nambari ya nyumba /</span>
                   House Number:</span
                 >
                 <select
@@ -249,7 +235,7 @@
 
               <label class="block w-full">
                 <span class="block text-sm font-light whitespace-nowrap">
-                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  <span class="font-medium">Hali ya ndoa /</span>
                   Martial Status:</span
                 >
                 <select
@@ -261,7 +247,7 @@
 
               <label class="block w-full">
                 <span class="block text-sm font-light">
-                  <!-- <span class="font-medium">Siku ya kuzaliwa /</span> -->
+                  <span class="font-medium">Kazi/</span>
                   Application Occupation:</span
                 >
                 <input
@@ -272,7 +258,7 @@
 
               <label class="block w-full">
                 <span class="block text-sm font-light">
-                  <!-- <span class="font-medium">Siku ya kuzaliwa /</span> -->
+                  <span class="font-medium">Sahihi/</span>
                   Application Signature:</span
                 >
                 <input
@@ -280,14 +266,15 @@
                   class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
                 />
               </label>
-
-
             </div>
 
-            <div class="px-2 grid md:grid-cols-1 space-y-24">
+            <div class="grid md:grid-cols-1 space-y-4 mt-24">
               <label class="block w-full">
-                <span class="block text-sm font-medium"
-                  >Reason of late application:</span
+               
+
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Sababu ya kuchelewa/</span>
+                  Reason of late application:</span
                 >
                 <textarea
                   class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
@@ -295,8 +282,875 @@
               </label>
 
               <label class="block w-full">
+               
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Sababu ya cheti/</span>
+                  Reason of certificate request</span
+                >
+                <textarea
+                  class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="w-full border border-black p-2">
+              <div
+                class="uppercase font-bold border-b border-black w-full py-2"
+              >
+                Birth Attende informantion
+              </div>
+              <div class="grid grid-cols-3 gap-6 py-4">
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la kwanza /</span>
+                    First Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la kati /</span>
+                    Second Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la mwisho /</span>
+                    Last Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Namba ya nyumba/</span>
+                    House Number:</span
+                  >
+                  <input
+                    type="number"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Uraia /</span>
+                    Nationality:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- parrent informant -->
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h> b.taarifa za wazee wa muombaji (ijazwe na mtoa taarifa)</h>
+          </div>
+          <div class="border-l border-b border-r border-black p-2">
+            <!-- father information -->
+            <div class="w-full border border-black p-2">
+              <div
+                class="uppercase font-bold border-b border-black w-full py-2"
+              >
+                father informantion
+              </div>
+              <div class="grid grid-cols-3 gap-3 py-4">
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la kwanza /</span>
+                    First Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la Pili /</span>
+                    Middle Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la mwisho /</span>
+                    LastName:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Sehemu alipozaliwa/</span>
+                    Place of birth:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <!-- <span class="font-medium"> /</span> -->
+                    Birth certificate:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Nambari /</span>
+                    ZanId Number:</span
+                  >
+                  <input
+                    type="number"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                    District of democile:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                    Shehia/ Ward of democile:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Namba ya nyumba/</span>
+                    House Number:</span
+                  >
+                  <input
+                    type="number"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Uraia /</span>
+                    Nationality:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Kabila /</span>
+                    Tribe:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <!-- mother information -->
+            <div class="w-full border border-black p-2 mt-20">
+              <div
+                class="uppercase font-bold border-b border-black w-full py-2"
+              >
+                mother informantion
+              </div>
+              <div class="grid grid-cols-3 gap-3 py-4">
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la kwanza /</span>
+                    First Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la Pili /</span>
+                    Middle Name:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Jina la mwisho /</span>
+                    LastName:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Sehemu alipozaliwa/</span>
+                    Place of birth:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <!-- <span class="font-medium"> /</span> -->
+                    Birth certificate:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Nambari /</span>
+                    ZanId Number:</span
+                  >
+                  <input
+                    type="number"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                    District of democile:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                    Shehia/ Ward of democile:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Namba ya nyumba/</span>
+                    House Number:</span
+                  >
+                  <input
+                    type="number"
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Uraia /</span>
+                    Nationality:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light whitespace-nowrap">
+                    <span class="font-medium">Kabila /</span>
+                    Tribe:</span
+                  >
+                  <select
+                    class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                  >
+                    <option></option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- informant information -->
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h> c. ijazwe na mtoa taarifa</h>
+          </div>
+          <div class="border-l border-b border-r border-black p-2">
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la kwanza /</span>
+                  First Name:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la Pili /</span>
+                  Middle Name:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la mwisho /</span>
+                  LastName:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Jinsia /</span>
+                  Gender:</span
+                >
+
+                <div class="mt-3 flex w-full flex-row space-x-6">
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium">Mume /</span>
+                      Male</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium">Mke /</span>
+                      Female</span
+                    >
+                  </div>
+                </div>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  Shehia/Ward of birth:</span
+                >
+                <select
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                >
+                  <option></option>
+                </select>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  District of democile:</span
+                >
+                <select
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                >
+                  <option></option>
+                </select>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  Shehia/ Ward of democile:</span
+                >
+                <select
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                >
+                  <option></option>
+                </select>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  House Number:</span
+                >
+                <input
+                  type="number"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Namba ya simu/</span>
+                  Phone Number:</span
+                >
+                <input
+                  type="number"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <!-- <span class="font-medium">Siku ya kuzaliwa /</span> -->
+                  P.O.Box:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <!-- <span class="font-medium">Sehemu alipozaliwa /</span> -->
+                  Type of informant:</span
+                >
+                <select
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                >
+                  <option></option>
+                </select>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <!-- <span class="font-medium">Siku ya kuzaliwa /</span> -->
+                  Birth Certificate Number:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light whitespace-nowrap">
+                  <span class="font-medium">Uraia /</span>
+                  Nationality:</span
+                >
+                <select
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2 bg-white"
+                >
+                  <option></option>
+                </select>
+              </label>
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <!-- <span class="font-medium">Siku ya kuzaliwa /</span> -->
+                  ZanId Number:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- declaration -->
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h> d. tamko la mtoa taarifa</h>
+          </div>
+          <div class="border-l border-b border-r border-black p-2 space-y-4">
+            <div class="py-2">
+              <p>
+                MIMI
+                ..............................................................................
+                Nathibitisha kuwa maelezo yote nilioyatowa hapo juu ni kweli
+                tupu kadiri ya kuelewa kwangu nafahamu kwamba kutoa taarifa
+                yoyote ya uongo ni kwenda kinyume na sheria za zanzibar na
+                kwamba hatua za kisheria zinaweza kuchuliwa dhidi yangu
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 py-4 border-t border-black">
+              <div class="space-y-6">
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Sahihi ya mtoa taarifa /</span>
+                    Signature:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full items-baseline border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Tarehe /</span>
+                    Date:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full items-baseline border-dotted border-b border-black px-2"
+                  />
+                </label>
+              </div>
+
+              <label class="block w-full space-y-2">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"
+                    >Sahihi ya dole gumba la kushoto /</span
+                  >
+                  Thumb Print:</span
+                >
+
+                <div class="w-[90%] h-52 border border-black"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- commissioiner of auth declaration -->
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h> e. mkuu wa viapo</h>
+          </div>
+          <div class="border-l border-b border-r border-black p-2 space-y-4">
+            <div class="py-2">
+              <p class="uppercase">
+                ni lazima tamko hili litolewe na lishuhudiwe mbele ya mkuu wa
+                viapo baadae lifuatiwe na utiaji wa sahihi baina ya
+                muombaji(ikiwa ana zaidi ya umri wa miaka 15 na mtoa taarifa)
+              </p>
+            </div>
+
+            <div class="py-6 border-t border-black">
+              <p class="">
+                MIMI
+                ........................................................................................................................
+                Mkuu wa viapo,katika afisi ya
+                ...............................................................................................................
+                nathibitisha kuwa mtoa taarifa hizi amekiri na kuthibitisha kuwa
+                yote aliyoyaeleza ni kweli na yuko tayari kuchukuliwa hatua za
+                kisheri endapo taarifa hizo zitapobainika kuwa sio sahihi
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 py-4 border-t border-black">
+              <div class="space-y-6">
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Sahihi ya mkuu wa viapo/</span>
+                    Signature:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full items-baseline border-dotted border-b border-black px-2"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="block text-sm font-light">
+                    <span class="font-medium">Tarehe /</span>
+                    Date:</span
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full items-baseline border-dotted border-b border-black px-2"
+                  />
+                </label>
+              </div>
+
+              <label class="block w-full space-y-2">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Muhuri wa mkuu wa viapo /</span>
+                  Stamp:</span
+                >
+
+                <div class="w-[90%] h-52 border border-black"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h>
+              f. ijazwe na afisa wa afisi ya wakala wa usajili wa matukio ya
+              kijamii</h
+            >
+          </div>
+          <div class="border-l border-b border-r border-black p-2">
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la kwanza /</span>
+                  First Name:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la Pili /</span>
+                  Second Name:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Jina la mwisho /</span>
+                  Surname:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Nambari iliyosajiliwa /</span>
+                  Book Number:</span
+                >
+                <input
+                  type="number"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Maelezo/</span>
+                  Form:</span
+                >
+
+                <div class="mt-3 flex w-full flex-row space-x-6">
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium">Imekamilika /</span>
+                      Complete</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium"> Haijakamilka/</span>
+                      Not Complete</span
+                    >
+                  </div>
+                </div>
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Sahihi ya afisa/</span>
+                  Signature:</span
+                >
+                <input
+                  type="number"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Tarehe /</span>
+                  Date:</span
+                >
+                <input
+                  type="date"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Muhuri wa afisa/</span>
+                  Stamp:</span
+                >
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          >
+            <h>
+              h. kamati ya usajili wa nje ya wakati (kwa matumizi ya afisi)</h
+            >
+          </div>
+          <div class="border-l border-b border-r border-black p-2">
+            <div class="grid grid-cols-3 gap-6 py-4">
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Kikao Nambari/</span>
+                  Meeting Number:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Mwenyekiti /</span>
+                  Chairperson:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Sahihi/</span>
+                  Signature:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium">Tarehe/</span>
+                  Date:</span
+                >
+                <input
+                  type="text"
+                  class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
+                />
+              </label>
+
+              <label class="block w-full">
+                <span class="block text-sm font-light">
+                  <span class="font-medium"> Hali ya ombi /</span>
+                  Request Status:</span
+                >
+
+                <div class="mt-3 flex w-full flex-row space-x-6">
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium">Maombi yamekubaliwa/</span>
+                      Approved</span
+                    >
+                  </div>
+
+                  <div class="flex flex-col items-center">
+                    <input type="checkbox" class="h-4 w-4" />
+                    <span class="block text-xs font-light">
+                      <span class="font-medium"> Yamekataliwa/</span>
+                      Not Approved</span
+                    >
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="grid md:grid-cols-2 gap-3">
+              <label class="block w-full">
                 <span class="block text-sm font-medium"
-                  >Reason of certificate Request:</span
+                  >Reason if not approved:</span
+                >
+                <textarea
+                  class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                ></textarea>
+              </label>
+    
+              <label class="block w-full">
+                <span class="block text-sm font-medium"
+                  >Stamp: </span
                 >
                 <textarea
                   class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
@@ -305,9 +1159,11 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </body>
+
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
@@ -332,6 +1188,7 @@
     //     return true;
     // });
   </script>
+
   <!-- html2pdf CDN-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 </html>
