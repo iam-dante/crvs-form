@@ -79,5 +79,12 @@ $(document).ready(function () {
 
   });
 
+  // var button = document.getElementById("download");
+  // var makepdf = document.getElementById("form");
+
+  // button.addEventListener("click", function () {
+  //   html2pdf().from(makepdf).save();
+  //   console.log("something");
+  // });
   
 });
