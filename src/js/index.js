@@ -1,14 +1,29 @@
 $(document).ready(function () {
+  function next(rmId, adId, shDv, hiDv) {
+    document.getElementById("mainpage").scrollIntoView();
+    $(rmId).removeClass("stepper-active");
+    $(adId).addClass("stepper-active ");
+
+    $(shDv).attr("style", "display:block");
+    $(hiDv).attr("style", "display:hide");
+    $(rmId).addClass("stepper-completed");
+  }
+
+  // Birth stepper controlers
   $("#parentNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
     $("#appId").removeClass("stepper-active");
     $("#parentId").addClass("stepper-active ");
     //    $(".mainstepper").attr("style", "height: 2060px");
-    $("#appDiv").attr("style", "display:none");
     $("#parentDiv").attr("style", "display:block");
+    $("#appDiv").attr("style", "display:none");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
+
+  // $("#parentNext").click(() => {
+  //   next("#appId", "#parentId", "#parentDiv", "#appDiv");
+  // });
 
   $("#prevApp").click(() => {
     document.getElementById("mainpage").scrollIntoView();
@@ -19,6 +34,8 @@ $(document).ready(function () {
     $("#appDiv").attr("style", "display:block");
     $("#appId").addClass("stepper-completed");
   });
+
+  
 
   $("#infoNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
@@ -71,20 +88,56 @@ $(document).ready(function () {
     document.getElementById("mainpage").scrollIntoView();
     $("#infoId").removeClass("stepper-active");
     $("#sumId").addClass("stepper-active ");
-    
+
     $("#sumDiv").attr("style", "display:block");
     $("#infoDiv").attr("style", "display:none");
     $("#infoId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: 5060px");
-
   });
 
-  // var button = document.getElementById("download");
-  // var makepdf = document.getElementById("form");
+  // Death stepper controlers
+  $("#infor-deathNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#deceasedId").removeClass("stepper-active");
+    $("#info-desId").addClass("stepper-active ");
 
-  // button.addEventListener("click", function () {
-  //   html2pdf().from(makepdf).save();
-  //   console.log("something");
-  // });
-  
+    $("#info-desDiv").attr("style", "display:block");
+    $("#deceasedDiv").attr("style", "display:none");
+    $("#deceasedId").addClass("stepper-completed");
+  });
+
+  // $("#infor-deathNext").click( () =>{
+  //   next("#deceasedId", "#info-desId", "#info-desDiv", "#deceasedDiv")
+  // }
+  // );
+
+  $("#prevDeceased").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#info-desId").removeClass("stepper-active");
+    $("#deceasedId").addClass("stepper-active ");
+
+    $("#deceasedDiv").attr("style", "display:block");
+    $("#info-desDiv").attr("style", "display:none");
+    // $("#deceasedIdId").addClass("stepper-completed");
+  });
+
+  $("#sum-deathNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#info-desId").removeClass("stepper-active");
+    $("#sum-deathId").addClass("stepper-active ");
+
+    $("#sum-deathDiv").attr("style", "display:block");
+    $("#info-desDiv").attr("style", "display:none");
+    $("#info-desId").addClass("stepper-completed");
+  });
+
+  $("#prevInfoDeath").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#sum-deathId ").removeClass("stepper-active");
+    $("#info-desId").addClass("stepper-active ");
+
+    $("#info-desDiv").attr("style", "display:block");
+    $("#sum-deathDiv ").attr("style", "display:none");
+    $("#info-desId").addClass("stepper-completed");
+  });
 });
