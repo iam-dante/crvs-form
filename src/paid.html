@@ -94,7 +94,7 @@
   </body>
 
   <!-- download form -->
-  <div id="form" class="hidden w-[793px] h-auto p-2">
+  <div id="form" class="w-[792px] h-auto px-2 py-2">
     <div class="space-y-4">
       <div class="w-full flex justify-center">
         <h class="uppercase text-xl font-bold"
@@ -903,7 +903,7 @@
       <!-- declaration -->
       <div>
         <div
-          class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 mt-28 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> d. tamko la mtoa taarifa</h>
         </div>
@@ -1026,7 +1026,7 @@
       <!-- registar goveement officer -->
       <div>
         <div
-          class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 bg-slate-300 mt-14 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h>
             f. ijazwe na afisa wa afisi ya wakala wa usajili wa matukio ya
@@ -1241,17 +1241,17 @@
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
-    const ps = new Promise((rs) => {
-      // rs(() => html2pdf().from(makepdf).save())
+    button.addEventListener("click", function () {
+      html2pdf().from(makepdf).save();
     });
-
-    function save() {
-      $("#form").removeClass("hidden");
-      ps.then(()=>  $("#form").addClass("hidden")).catch((e)=> console.log(e) )
-    }
-    button.addEventListener("click", save());
   </script>
 
   <!-- html2pdf CDN-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script> -->
 </html>

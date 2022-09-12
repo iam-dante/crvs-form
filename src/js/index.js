@@ -132,7 +132,9 @@ $(document).ready(function () {
   });
 
   $("#prevInfoDeath").click(() => {
-    document.getElementById("mainpage").scrollIntoView();
+    document.getElementByI const ps = new Promise((rs) => {
+      rs(() => html2pdf().from(makepdf).save())
+    });d("mainpage").scrollIntoView();
     $("#sum-deathId ").removeClass("stepper-active");
     $("#info-desId").addClass("stepper-active ");
 
