@@ -4,10 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.required:after {
+/* .required:after {
   content: "*";
   color: red;
-}
+} */
 
 .stepper-active .stepper-head-text{
     @apply font-bold

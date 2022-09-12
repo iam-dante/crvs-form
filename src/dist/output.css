@@ -590,14 +590,6 @@ video {
   margin-top: 5rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .mt-14{
   margin-top: 3.5rem;
 }
@@ -1108,10 +1100,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.required:after {
+/* .required:after {
   content: "*";
   color: red;
-}
+} */
 
 .stepper-active .stepper-head-text{
   font-weight: 700;
