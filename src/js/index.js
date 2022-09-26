@@ -35,8 +35,6 @@ $(document).ready(function () {
     $("#appId").addClass("stepper-completed");
   });
 
-  
-
   $("#infoNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
     $("#parentId").removeClass("stepper-active");
@@ -139,5 +137,27 @@ $(document).ready(function () {
     $("#info-desDiv").attr("style", "display:block");
     $("#sum-deathDiv ").attr("style", "display:none");
     $("#info-desId").addClass("stepper-completed");
+  });
+
+  $("#inforUpNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#appId").removeClass("stepper-active");
+    $("#infoId").addClass("stepper-active ");
+    //    $(".mainstepper").attr("style", "height: 2060px");
+    $("#infoDiv").attr("style", "display:block");
+    $("#appDiv").attr("style", "display:none");
+    $("#appId").addClass("stepper-completed");
+    // $(".mainstepper").attr("style", "height: ");
+  });
+
+  $("#prevUpParent").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+    $("#infoId").removeClass("stepper-active");
+    $("#appId").addClass("stepper-active ");
+    //    $(".mainstepper").attr("style", "height: 2060px");
+    $("#appDiv").attr("style", "display:block");
+    $("#infoDiv").attr("style", "display:none");
+    $("#appId").addClass("stepper-completed");
+    // $(".mainstepper").attr("style", "height: ");
   });
 });

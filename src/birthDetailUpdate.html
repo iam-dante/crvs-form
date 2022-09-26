@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss elements -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    /> -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
+    <title> Update Birth Registration Details</title>
+  </head>
+  <body class="bg-slate-100">
+    <main id="mainpage" class="min-h-screen bg-slate-100 mt-4">
+      <!-- header -->
+      <div
+        class="py-2 w-full flex-col flex justify-center items-center space-y-2"
+      >
+        <h class="uppercase font-bold text-center px-2 md:text-xl"
+          > update birth Registration  details</h
+        >
+        <div class="flex justify-center flex-col">
+          <img src="./image/header-logo.png" class="h-28 w-36" />
+        </div>
+        <h class="uppercase font-bold text-center px-2 md:text-xl"
+          >Zanzibar Civil Status Registration Agency (ZCSRA)</h
+        >
+      </div>
+
+      <!-- main section -->
+      <div class="mainstepper mt-4 h-auto py-4 mx-auto px-2 md:px-12 lg:px-24">
+        <ul class="stepper w-full mx-auto" data-mdb-stepper="stepper">
+          <!-- applicatint details -->
+          <li id="appId" class="stepper-step">
+            <button class="stepper-head w-full" disabled>
+              <span class="stepper-head-icon"> 1 </span>
+              <span
+                class="hidden md:block stepper-head-text md:text-xl uppercase text-black text-sm"
+              >
+                Applicant details
+              </span>
+            </button>
+
+            <!-- Applicant nfromation -->
+            <div id="appDiv" class="stepper-content space-y-8">
+              <div class="space-y-4">
+                <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                  <h class="text-xl font-semibold uppercase"
+                    >applicant information</h
+                  >
+                </div>
+
+                <form class="space-y-8">
+                  <!-- first details -->
+                  <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Nambari ya tukio /</span>
+                        Event Number</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="First Name"
+                      />
+                    </label>
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kwanza /</span>
+                        First Name</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="First Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kati /</span>
+                        Middle Name</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Middle Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la Ukoo /</span>
+                        SurName</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="SurName"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-light">
+                        <span class="font-medium"> Sababu ya kubadilisha/</span>
+                        Reason(s) of changes</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option>Lost</option>
+                        <option>Damaged</option>
+                        <option>Stolen</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <!-- actions -->
+                  <div class="flex h-20 w-full justify-end">
+                    <button
+                      type="button"
+                      id="inforUpNext"
+                      class="flex h-12 items-center space-x-3 rounded bg-crvsgreen-800 px-4 font-semibold uppercase text-white hover:border hover:border-crvsgreen-800 hover:bg-white hover:text-crvsgreen-800"
+                    >
+                      <h class="font-bold">next</h>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+
+          <!-- informant details -->
+          <li id="infoId" class="stepper-step">
+            <button class="stepper-head w-full" disabled>
+              <span class="stepper-head-icon"> 2 </span>
+              <span
+                class="hidden md:block stepper-head-text text-sm md:text-xl uppercase text-black"
+              >
+                informant details
+              </span>
+            </button>
+
+            <div id="infoDiv" class="stepper-content space-y-8">
+              <div class="space-y-4">
+                <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                  <h class="text-xl font-semibold uppercase"
+                    >informant information</h
+                  >
+                </div>
+
+                <form class="space-y-8">
+                  <!-- father details -->
+                  <div
+                    class="grid gap-8 px-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4"
+                  >
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Aina ya kitambulisho /</span>
+                        Id Type</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Id Type"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">
+                          Nambari ya kitambulisho /</span
+                        >
+                        Id Number</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Id Number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Usiano /</span>
+                        Relationship type
+                      </span>
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option></option>
+                      </select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kati /</span>
+                        Middle Name</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Middle Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la Ukoo /</span>
+                        SurName</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="SurName"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium"> Jinsia /</span>
+                        Gender</span
+                      >
+
+                      <div class="mt-3 flex flex-row space-x-6">
+                        <div class="flex flex-col items-center">
+                          <input type="radio" class="h-4 w-4" />
+                          <span class="block text-base font-light">
+                            <span class="font-medium">Mume /</span>
+                            Male</span
+                          >
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                          <input type="radio" class="h-4 w-4" />
+                          <span class="block text-base font-light">
+                            <span class="font-medium">Mke /</span>
+                            Female</span
+                          >
+                        </div>
+                      </div>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya simu/</span>
+                        Phone number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Phone number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Sanduku la posta /</span>
+                        P.O.Box
+                      </span>
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Sanduku la posta"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Aina ya mtoa habari /</span>
+                        Type of informant</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option></option>
+                      </select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >District of democile</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >Shehia/ward of democile</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya nyumba/</span>
+                        House Number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="House Number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >Nationality</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya ZanID / </span>
+                        ZanID number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="ZanID number"
+                      />
+                    </label>
+                  </div>
+
+                  <!-- actions -->
+                  <div class="flex h-20 w-full justify-between">
+                    <button
+                      type="button"
+                      id="prevUpParent"
+                      class="flex h-12 items-center space-x-3 rounded bg-crvsgreen-800 px-4 font-semibold uppercase text-white hover:border hover:border-crvsgreen-800 hover:bg-white hover:text-crvsgreen-800"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      <h class="font-bold">prev</h>
+                    </button>
+
+                    <button
+                      type="button"
+                      id="sumNext"
+                      class="flex h-12 items-center space-x-3 rounded bg-crvsgreen-800 px-4 font-semibold uppercase text-white hover:border hover:border-crvsgreen-800 hover:bg-white hover:text-crvsgreen-800"
+                    >
+                      <h class="font-bold">next</h>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+
+          <!-- summary and submition -->
+          <li id="sumId" class="stepper-step">
+            <button class="stepper-head w-full" disabled>
+              <span class="stepper-head-icon"> 4 </span>
+              <span
+                class="hidden md:block stepper-head-text text-sm md:text-xl uppercase text-black"
+              >
+                summary
+              </span>
+            </button>
+
+            <div id="sumDiv" class="stepper-content space-y-8">
+              <div class="space-y-4">
+                <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                  <h class="text-xl font-semibold uppercase"
+                    >child information</h
+                  >
+                </div>
+
+                <form class="space-y-8">
+                  <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Nambari ya tukio /</span>
+                        Event Number</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="First Name"
+                      />
+                    </label>
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kwanza /</span>
+                        First Name</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="First Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kati /</span>
+                        Middle Name</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Middle Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la Ukoo /</span>
+                        SurName</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="SurName"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-light">
+                        <span class="font-medium"> Sababu ya kubadilisha/</span>
+                        Reason(s) of changes</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option>Lost</option>
+                        <option>Damaged</option>
+                        <option>Stolen</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                    <h class="text-xl font-semibold uppercase"
+                      >informant information</h
+                    >
+                  </div>
+                  <div
+                    class="grid gap-8 px-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4"
+                  >
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Aina ya kitambulisho /</span>
+                        Id Type</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Id Type"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">
+                          Nambari ya kitambulisho /</span
+                        >
+                        Id Number</span
+                      >
+
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Id Number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Usiano /</span>
+                        Relationship type
+                      </span>
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option></option>
+                      </select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la kati /</span>
+                        Middle Name</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Middle Name"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Jina la Ukoo /</span>
+                        SurName</span
+                      >
+                      <input
+                        type="text"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="SurName"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium"> Jinsia /</span>
+                        Gender</span
+                      >
+
+                      <div class="mt-3 flex flex-row space-x-6">
+                        <div class="flex flex-col items-center">
+                          <input type="radio" class="h-4 w-4" />
+                          <span class="block text-base font-light">
+                            <span class="font-medium">Mume /</span>
+                            Male</span
+                          >
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                          <input type="radio" class="h-4 w-4" />
+                          <span class="block text-base font-light">
+                            <span class="font-medium">Mke /</span>
+                            Female</span
+                          >
+                        </div>
+                      </div>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya simu/</span>
+                        Phone number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Phone number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Sanduku la posta /</span>
+                        P.O.Box
+                      </span>
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Sanduku la posta"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Aina ya mtoa habari /</span>
+                        Type of informant</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option></option>
+                      </select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >District of democile</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >Shehia/ward of democile</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya nyumba/</span>
+                        House Number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="House Number"
+                      />
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-medium"
+                        >Nationality</span
+                      >
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      ></select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="required block text-base font-light">
+                        <span class="font-medium">Namba ya ZanID / </span>
+                        ZanID number</span
+                      >
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="ZanID number"
+                      />
+                    </label>
+                  </div>
+                </form>
+
+                <!-- actions -->
+                <div class="flex h-20 w-full justify-between">
+                  <button
+                    type="button"
+                    id="prevInfodec"
+                    class="flex h-12 items-center space-x-3 rounded bg-crvsgreen-800 px-4 font-semibold uppercase text-white hover:border hover:border-crvsgreen-800 hover:bg-white hover:text-crvsgreen-800"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <h class="font-bold">prev</h>
+                  </button>
+
+                  <a
+                    type="button"
+                    href="./paid.html"
+                    id="submit"
+                    class="flex h-12 items-center space-x-3 rounded bg-crvsgreen-800 px-4 font-semibold uppercase text-white hover:border hover:border-crvsgreen-800 hover:bg-white hover:text-crvsgreen-800"
+                  >
+                    <h class="font-bold">submit</h>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- cnd script -->
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
