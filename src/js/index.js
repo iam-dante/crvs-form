@@ -1,14 +1,24 @@
+function next(rmId, adId, shDv, hiDv) {
+  document.getElementById("mainpage").scrollIntoView();
+  $(rmId).removeClass("stepper-active");
+  $(adId).addClass("stepper-active ");
+
+  $(shDv).attr("style", "display:block");
+  $(hiDv).attr("style", "display:hide");
+  $(rmId).addClass("stepper-completed");
+}
+
+function prev(rmId, adId, shDv, hiDv) {
+  document.getElementById("mainpage").scrollIntoView();
+  $(rmId).removeClass("stepper-active");
+  $(adId).addClass("stepper-active ");
+
+  $(shDv).attr("style", "display:block");
+  $(hiDv).attr("style", "display:hide");
+  $(rmId).addClass("stepper-completed");
+}
+
 $(document).ready(function () {
-  function next(rmId, adId, shDv, hiDv) {
-    document.getElementById("mainpage").scrollIntoView();
-    $(rmId).removeClass("stepper-active");
-    $(adId).addClass("stepper-active ");
-
-    $(shDv).attr("style", "display:block");
-    $(hiDv).attr("style", "display:hide");
-    $(rmId).addClass("stepper-completed");
-  }
-
   // Birth stepper controlers
   $("#parentNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
@@ -20,10 +30,6 @@ $(document).ready(function () {
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
-
-  // $("#parentNext").click(() => {
-  //   next("#appId", "#parentId", "#parentDiv", "#appDiv");
-  // });
 
   $("#prevApp").click(() => {
     document.getElementById("mainpage").scrollIntoView();
@@ -104,10 +110,6 @@ $(document).ready(function () {
     $("#deceasedId").addClass("stepper-completed");
   });
 
-  // $("#infor-deathNext").click( () =>{
-  //   next("#deceasedId", "#info-desId", "#info-desDiv", "#deceasedDiv")
-  // }
-  // );
 
   $("#prevDeceased").click(() => {
     document.getElementById("mainpage").scrollIntoView();
@@ -130,7 +132,7 @@ $(document).ready(function () {
   });
 
   $("#prevInfoDeath").click(() => {
-    document.getElementByID("mainpage").scrollIntoView();
+    document.getElementById("mainpage").scrollIntoView();
     $("#sum-deathId ").removeClass("stepper-active");
     $("#info-desId").addClass("stepper-active ");
 
@@ -154,10 +156,13 @@ $(document).ready(function () {
     document.getElementById("mainpage").scrollIntoView();
     $("#infoId").removeClass("stepper-active");
     $("#appId").addClass("stepper-active ");
-    //    $(".mainstepper").attr("style", "height: 2060px");
+    //  $(".mainstepper").attr("style", "height: 2060px");
     $("#appDiv").attr("style", "display:block");
     $("#infoDiv").attr("style", "display:none");
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
 });
+
+
+

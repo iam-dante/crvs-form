@@ -9,6 +9,10 @@
   color: red;
 } */
 
+/* *{
+  @apply transition-all duration-200 ease-out
+} */
+
 .stepper-active .stepper-head-text{
     @apply font-bold
 }
