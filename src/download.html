@@ -30,7 +30,7 @@
               >Please crosscheck the filled form if everything is correct before
               downloading
             </h>
-            <h class="text-slate-500 text-lg"
+            <h class="text-slate-500 text-lg text-center"
               >Tafadhali angalia fomu iliyojazwa ikiwa kila kitu kiko sawa kabla
               ya kupakua</h
             >
@@ -61,29 +61,8 @@
       </div>
     </main>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <!-- <script src="./js/index.js"></script> -->
 
-    <script>
-      function copyMeOnClipboard() {
-        var r = document.createRange();
-        var text = document.getElementById("writeText");
-        r.selectNode(document.getElementById("controlnumber"));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(r);
-        document.execCommand("copy");
-        window.getSelection().removeAllRanges();
-        console.log("copy");
-        text.innerHTML = "The control number is copied !";
-      }
-      991270416395;
-    </script>
   </body>
 
   <!-- download form -->
@@ -120,9 +99,10 @@
         <div class="flex justify-between items-end">
           <div class="space-y-2">
             <div
-              class="h-36 w-36 border border-black flex justify-center items-center"
+              class="w-48 flex justify-center items-center"
             >
-              <h class="uppercase font-bold text-center">bar code</h>
+            <svg id="barcode"></svg>
+              <!-- <h class="uppercase font-bold text-center"> bar code</h> -->
             </div>
             <label class="flex items-baseline space-x-2">
               <span class="font-semi">Nambari ya Fomu: </span>
@@ -1330,6 +1310,8 @@
       };
       html2pdf().set(opt).from(makepdf).save();
     });
+
+    
   </script>
 
   <!-- html2pdf CDN-->
@@ -1340,4 +1322,9 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js"></script>
+  <script>
+      JsBarcode("#barcode", 74673478392);
+  </script>
 </html>
