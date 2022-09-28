@@ -886,12 +886,6 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .whitespace-nowrap{
   white-space: nowrap;
 }
@@ -1063,11 +1057,6 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1084,24 +1073,8 @@ video {
   padding-top: 3rem;
 }
 
-.pt-7{
-  padding-top: 1.75rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
 .text-center{
   text-align: center;
-}
-
-.text-justify{
-  text-align: justify;
 }
 
 .text-sm{
@@ -1210,14 +1183,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-150{
-  transition-duration: 150ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
 }
 
 .duration-500{
@@ -1577,11 +1542,6 @@ video {
   .xl\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .xl\:px-44{
-    padding-left: 11rem;
-    padding-right: 11rem;
   }
 
   .xl\:text-lg{
