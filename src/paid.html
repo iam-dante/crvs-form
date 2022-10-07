@@ -124,10 +124,16 @@
       </div>
 
       <div class="flex justify-between items-end">
-        <label class="flex items-baseline space-x-2">
-          <span class="font-semi">Nambari ya Fomu: </span>
-          <input class="mt-1 h-8 border-b border-dotted border-black px-4" />
-        </label>
+
+        <div class="space-y-2">
+          <canvas id="barcode" class=""></canvas>
+  
+          <label class="flex items-baseline space-x-2">
+            <span class="font-semi">Nambari ya Fomu: </span>
+            <input class="mt-1 h-8 border-b border-dotted border-black px-4" />
+          </label>
+
+        </div>
 
         <div
           class="h-40 w-40 border border-black flex justify-center items-center"
@@ -910,7 +916,8 @@
         <div class="border-l border-b border-r border-black p-2 space-y-4">
           <div class="py-2">
             <p>
-              MIMI ..............................................................................
+              MIMI
+              ..............................................................................
               Nathibitisha kuwa maelezo yote nilioyatowa hapo juu ni kweli tupu
               kadiri ya kuelewa kwangu nafahamu kwamba kutoa taarifa yoyote ya
               uongo ni kwenda kinyume na sheria za zanzibar na kwamba hatua za
@@ -975,8 +982,10 @@
 
           <div class="py-6 border-t border-black">
             <p class="">
-              MIMI ....................................................................
-              Mkuu wa viapo,katika afisi ya ......................................................................................
+              MIMI
+              ....................................................................
+              Mkuu wa viapo,katika afisi ya
+              ......................................................................................
               nathibitisha kuwa mtoa taarifa hizi amekiri na kuthibitisha kuwa
               yote aliyoyaeleza ni kweli na yuko tayari kuchukuliwa hatua za
               kisheri endapo taarifa hizo zitapobainika kuwa sio sahihi
@@ -1130,10 +1139,8 @@
                 Stamp:</span
               >
             </label>
-            </label>
 
             <label class="h-40 border border-black"></label>
-
           </div>
         </div>
       </div>
@@ -1250,12 +1257,12 @@
     });
   </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
+  <script>
+    // Barcode
+    JsBarcode("#barcode", "84865847889893");
+  </script>
+
   <!-- html2pdf CDN-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-  <!-- <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script> -->
 </html>
