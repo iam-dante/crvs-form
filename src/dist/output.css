@@ -1157,6 +1157,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-loose{
+  line-height: 2;
+}
+
 .tracking-widest{
   letter-spacing: 0.1em;
 }
