@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -608,12 +608,12 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .mt-32{
   margin-top: 8rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-44{
@@ -748,16 +748,16 @@ video {
   width: 12rem;
 }
 
+.w-\[308px\]{
+  width: 308px;
+}
+
 .w-\[793px\]{
   width: 793px;
 }
 
 .w-24{
   width: 6rem;
-}
-
-.w-\[308px\]{
-  width: 308px;
 }
 
 .grid-cols-1{
@@ -1068,14 +1068,14 @@ video {
   padding-bottom: 3rem;
 }
 
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pt-6{
@@ -1100,6 +1100,10 @@ video {
 
 .font-robot{
   font-family: Roboto Mono, monospace;
+}
+
+.font-sans{
+  font-family: DM Sans, sans-serif;
 }
 
 .text-xl{
@@ -1132,6 +1136,10 @@ video {
   line-height: 1rem;
 }
 
+.text-xx{
+  font-size: 0.7rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1152,13 +1160,17 @@ video {
   text-transform: uppercase;
 }
 
+.normal-case{
+  text-transform: none;
+}
+
 .lining-nums{
   --tw-numeric-figure: lining-nums;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-loose{
-  line-height: 2;
+.leading-5{
+  line-height: 1.25rem;
 }
 
 .tracking-widest{
@@ -1578,4 +1590,3 @@ video {
     line-height: 1.75rem;
   }
 }
-

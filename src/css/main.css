@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -14,25 +14,25 @@
   @apply transition-all duration-200 ease-out
 } */
 
-.stepper-active .stepper-head-text{
-    @apply font-bold
+
+
+.stepper-active .stepper-head-text {
+  @apply font-bold;
 }
 
 .stepper-active {
-    @apply border-b-4 border-crvsblue-800 
+  @apply border-b-4 border-crvsblue-800;
 }
 
-
-.stepper-head{
-  @apply hover:bg-sky-100
+.stepper-head {
+  @apply hover:bg-sky-100;
 }
 
-.heightstepper{
-  @apply min-h-screen !important
+.heightstepper {
+  @apply min-h-screen !important;
 }
 .stepper {
   position: relative;
-  
 }
 
 .stepper:not(.stepper-vertical) {
@@ -96,7 +96,6 @@
   -webkit-box-pack: space-between;
   -ms-flex-pack: space-between;
 } */
-
 
 .stepper:not(.stepper-vertical) {
   display: -webkit-box;
@@ -235,7 +234,6 @@
   background-color: #198754;
 }
 
-.stepper-content{
-  @apply pt-6 
+.stepper-content {
+  @apply pt-6;
 }
-

@@ -7,6 +7,18 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
     <title>Control Number</title>
+
+    <style>
+      input{
+       text-transform: uppercase;
+       font-weight: bold;
+      }
+
+      option{
+       text-transform: uppercase;
+       font-weight: bold;
+      }
+    </style>
   </head>
   <body class="bg-slate-100 mx-auto lg:px-24">
     <main class="px-2 lg:px-24">
@@ -1296,6 +1308,114 @@
             </div>
           </div>
         </div>
+
+        <!-- receipt -->
+        <div class="flex justify-center  py-12">
+    <div
+      class="w-[308px] border border-black mt-32 px-4 py-6 uppercase text-xs font-robot"
+    >
+      <div class="flex items-center justify-center">
+        <img src="./image/header-logo.png" class="h-12" alt="" />
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-center items-center mt-4 flex-col space-y-2">
+          <h1 class="text-center">The Revolutionary Gorvernment of Zanzibar</h1>
+          <h1 class="text-center">Zanzibar Civil Status Registration Authority</h1>
+          <h1 class="">Exchequer Receipt</h1>
+          <h1 class="">Stakabadhi ya malipo ya serikali</h1>
+        </div>
+
+        <div
+          class="border-t border-dashed py-4 border-black flex flex-col space-y-2"
+        >
+          <label class="flex space-x-4">
+            <h1>Receipt No:</h1>
+            <h1 class="font-bold">98765783939374</h1>
+          </label>
+          <label class="flex space-x-4">
+            <h1>Received From:</h1>
+            <h1 class="font-bold">hosam</h1>
+          </label>
+
+          <label class="flex space-x-4">
+            <h1>Amount:</h1>
+            <h1 class="font-bold">60,000.00</h1>
+          </label>
+
+          <label class="flex space-x-4">
+            <h1>Outstanding Balance:</h1>
+            <h1 class="font-bold">0.00</h1>
+          </label>
+        </div>
+
+        <div
+          class="border-t border-dashed py-4 border-black flex flex-col space-y-2"
+        >
+          <label class="flex space-x-4">
+            <h1>bill reference:</h1>
+            <h1 class="font-bold">200001120030402</h1>
+          </label>
+          <label class="flex space-x-4">
+            <h1>Payment Control Number:</h1>
+            <h1 class="font-bold">20192839233</h1>
+          </label>
+
+          <label class="flex space-x-4">
+            <h1>payment date:</h1>
+            <h1 class="font-bold">2022-10-02</h1>
+          </label>
+
+          <label class="flex space-x-4">
+            <h1>Issued by:</h1>
+            <h1 class="font-bold">Raya Mohamed</h1>
+          </label>
+
+          <label class="flex space-x-4">
+            <h1>Date Issued:</h1>
+            <h1 class="font-bold">2022-10-02</h1>
+          </label>
+          <label class="flex space-x-4">
+            <h1>Signature:</h1>
+            <h1 class="font-bold">---------</h1>
+          </label>
+        </div>
+
+        <div>
+        
+          <div
+            class="border-t border-b justify-between border-dashed py-2 border-black flex items-center px-2"
+          >
+            <h1 class="font-bold">description</h1>
+            <h1 class="font-bold">amount</h1>
+          </div>
+          <div class="border-b border-dashed border-black px-2 space-y-3 py-3">
+            <label class="justify-between flex items-center">
+              <h1 class="">2339203 - ada ya hati :</h1>
+              <h1 class="">30,000.00</h1>
+            </label>
+            <label class="justify-between flex items-center">
+              <h1 class="">1239203 - ada ya ya kusafiri :</h1>
+              <h1 class="">30,000.00</h1>
+            </label>
+            <label class="justify-between flex items-center">
+              <h1 class="">2483303 - ada ya kibali :</h1>
+              <h1 class="">30,000.00</h1>
+            </label>
+            <label class="border-t border-black  border-dashed  py-2  justify-between flex items-center font-bold">
+              <h1 class="">total amount:</h1>
+              <h1 class="">90,000.00</h1>
+            </label>
+          </div>
+          
+          <div class="py-4 flex flex-col space-y-4 items-center justify-center">
+            <h1>receipt verfication code </h1>
+            <h1 class="font-bold tracking-widest">Ca8s7493 </h1>
+            <div id="qrcode"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       </div>
     </div>
   </div>
@@ -1326,5 +1446,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js"></script>
   <script>
       JsBarcode("#barcode", 74673478392);
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: "2237483928377483933303",
+      width: 128,
+      height: 128,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H,
+    });
   </script>
 </html>
