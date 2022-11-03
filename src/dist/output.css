@@ -1810,6 +1810,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
