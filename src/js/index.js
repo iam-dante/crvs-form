@@ -110,7 +110,6 @@ $(document).ready(function () {
     $("#deceasedId").addClass("stepper-completed");
   });
 
-
   $("#prevDeceased").click(() => {
     document.getElementById("mainpage").scrollIntoView();
     $("#info-desId").removeClass("stepper-active");
@@ -162,7 +161,94 @@ $(document).ready(function () {
     $("#appId").addClass("stepper-completed");
     // $(".mainstepper").attr("style", "height: ");
   });
+
+  //Marriage
+  $("#brideNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#brideId").addClass("stepper-active");
+    $("#groomId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#brideDiv").attr("style", "display: block");
+    $("#groomDiv").attr("style", "display: none");
+    $("#groomId").addClass("stepper-completed");
+  });
+
+  $("#prevGroom").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#groomId").addClass("stepper-active");
+    $("#brideId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 1600px");
+
+    $("#groomDiv").attr("style", "display: block");
+    $("#brideDiv ").attr("style", "display: none");
+  });
+
+  $("#prevBride").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#brideId").addClass("stepper-active");
+    $("#witId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 1600px");
+
+    $("#brideDiv").attr("style", "display: block");
+    $("#witDiv ").attr("style", "display: none");
+  });
+
+  $("#witNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#witId").addClass("stepper-active");
+    $("#brideId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 400px");
+
+    $("#witDiv").attr("style", "display: block");
+    $("#brideDiv").attr("style", "display: none");
+    $("#brideId").addClass("stepper-completed");
+  });
+
+  $("#marrSumNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#marrSumId").addClass("stepper-active");
+    $("#witId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 400px");
+
+    $("#marrSumDiv").attr("style", "display: block");
+    $("#witDiv").attr("style", "display: none");
+    $("#witId").addClass("stepper-completed");
+  });
+
+  $("#prevWit").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#witId").addClass("stepper-active");
+    $("#marrSumId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 1600px");
+
+    $("#witDiv").attr("style", "display: block");
+    $("#marrSumDiv ").attr("style", "display: none");
+  });
+
+
+  $("#attmarrNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#attmarrId").addClass("stepper-active");
+    $("#witId").removeClass("stepper-active");
+
+    $(".heightstepper").attr("style", "height: 400px");
+
+    $("#attmarrDiv").attr("style", "display: block");
+    $("#witDiv").attr("style", "display: none");
+    $("#witId").addClass("stepper-completed");
+  });
 });
-
-
-
