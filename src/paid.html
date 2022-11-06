@@ -161,9 +161,9 @@
         <h>taarifa jaza kwa herufi kubwa na tumia wino mweusi tu</h>
       </div>
 
-      <div>
+      <div class="pt-10">
         <div
-          class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16  bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> a.taarifa za muombaji (ijazwe na mtoa taarifa)</h>
         </div>
@@ -357,7 +357,7 @@
             </label>
           </div>
 
-          <div class="grid md:grid-cols-1 space-y-4 mt-24">
+          <div class="grid md:grid-cols-1 space-y-4 mt-12">
             <label class="block w-full">
               <span class="block text-sm font-light">
                 <span class="font-medium">Sababu ya kuchelewa/</span>
@@ -1245,15 +1245,20 @@
     </div>
   </div>
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
     button.addEventListener("click", function () {
-      var opt = {
-        filename: "Birth-Form",
-      };
-      html2pdf().set(opt).from(makepdf).save();
+      $(makepdf).printThis({
+        removeInline:true,
+        header: null,
+        footer: null,
+        importCSS: true,
+        pageTitle: "Birth Late Form"
+      });
     });
   </script>
 
@@ -1263,6 +1268,4 @@
     JsBarcode("#barcode", "84865847889893");
   </script>
 
-  <!-- html2pdf CDN-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 </html>

@@ -86,7 +86,6 @@
         window.getSelection().addRange(r);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();
-        console.log("copy");
         text.innerHTML = "The control number is copied !";
       }
       991270416395;
@@ -115,7 +114,7 @@
             >kanuni ya usajili wa matukio ya kijamii ya 2020, kanuni ya 5</h
           >
           <h class="uppercase font-medium text-xs"
-            >fomu ya usajili wa kizazi kilichochelewa kusajiliwa</h
+            >fomu ya usajili wa ndoa kilichochelewa kusajiliwa</h
           >
         </div>
         <div class="col-span-1">
@@ -143,14 +142,14 @@
       </div>
 
       <p class="text-center">
-        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa kiazazi kutoka
+        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa ndoa kutoka
         kwa sheha, Barua ya skuli ya msingi aliyosoma muombaji na
         stakabashi(risiti) ya mauzoya fomu hii, picha ya muombaji na mtoa
         taarifa na hati nyengine yoyote itakayoidhinishwa na afisa usajili
       </p>
 
       <div
-        class="h-12 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+        class="h-12  bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
       >
         <h>taarifa jaza kwa herufi kubwa na tumia wino mweusi tu</h>
       </div>
@@ -240,7 +239,7 @@
         </div>
       </div>
 
-       <div>
+       <div class="pt-48">
         <div
           class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
@@ -292,7 +291,7 @@
       <!-- informant information -->
       <div>
         <div
-          class="h-16 mt-40 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16  bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> c. ijazwe na mtoa taarifa</h>
         </div>
@@ -491,7 +490,7 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-2 gap-6 py-4 border-t border-black">
+          <div class="grid grid-cols-2 gap-6 py-4 pt-32 border-t border-black">
             <div class="space-y-6">
               <label class="block w-full">
                 <span class="block text-sm font-light">
@@ -533,7 +532,7 @@
       <!-- commissioiner of auth declaration -->
       <div>
         <div
-          class="h-16 mt-28 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 mt-12 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> e. mkuu wa viapo</h>
         </div>
@@ -596,7 +595,7 @@
       <!-- registar goveement officer -->
       <div>
         <div
-          class="h-16 bg-slate-300  w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 bg-slate-300 mt-36 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h>
             f. ijazwe na afisa wa afisi ya wakala wa usajili wa matukio ya
@@ -713,5 +712,24 @@
     </div>
   </div>
 
- 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
+  <script>
+    var button = document.getElementById("download");
+    var makepdf = document.getElementById("form");
+
+    button.addEventListener("click", function () {
+      $(makepdf).printThis({
+        removeInline:true,
+        header: null,
+        footer: null,
+        importCSS: true,
+        pageTitle: "Marriage Late Form"
+      });
+    });
+  </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
+  <script>
+    // Barcode
+    JsBarcode("#barcode", "84865847889893");
+  </script>
 </html>

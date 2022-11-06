@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
-    <title>Control Number</title>
+    <title>Marriage Late Form</title>
   </head>
   <body class="bg-slate-100 mx-auto lg:px-24">
     <main class="min-h-screen px-2 lg:px-24">
@@ -115,7 +115,7 @@
             >kanuni ya usajili wa matukio ya kijamii ya 2020, kanuni ya 5</h
           >
           <h class="uppercase font-medium text-xs"
-            >fomu ya usajili wa kifo kilichochelewa kusajiliwa</h
+            >fomu ya usajili wa ndoa kilichochelewa kusajiliwa</h
           >
         </div>
         <div class="col-span-1">
@@ -141,7 +141,7 @@
       </div>
 
       <p class="text-center">
-        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa kifo kutoka kwa
+        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa ndoa kutoka kwa
         sheha, na stakabashi(risiti) ya mauzoya fomu hii, na mtoa taarifa na
         hati nyengine yoyote itakayoidhinishwa na afisa usajili
       </p>
@@ -196,27 +196,26 @@
                   class="mt-1 h-10 w-full border-dotted border-b border-black px-2"
                 />
               </label>
-
             </div>
 
-            <div class="grid md:grid-cols-1 space-y-4 mt-6">
+            <div class="grid md:grid-cols-1 gap-6 space-y-4 mt-12">
               <label class="block w-full">
                 <span class="block text-sm font-light">
                   <span class="font-medium">Sababu ya kuchelewa/</span>
                   Reason of late application:</span
                 >
                 <textarea
-                  class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                  class="mt-1 py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
                 ></textarea>
               </label>
 
-              <label class="block w-full">
-                <span class="block text-sm font-light">
+              <label class="block w-full mt-12">
+                <span class="block text-sm font-light mt-12">
                   <span class="font-medium">Sababu ya kuomba cheti/</span>
                   Reason of certificate request</span
                 >
                 <textarea
-                  class="mt-1 py-2 h-28 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                  class="mt-1 py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
                 ></textarea>
               </label>
             </div>
@@ -495,7 +494,7 @@
 
       <div>
         <div
-          class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 mt-32 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> b.Taarifa za mashuhuda</h>
         </div>
@@ -815,7 +814,7 @@
       </div>
 
       <!-- commission of late registration -->
-      <div>
+      <div >
         <div
           class="h-16 bg-slate-300 mt-8 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
@@ -892,20 +891,20 @@
               </div>
             </label>
           </div>
-          <div class="grid md:grid-cols-2 gap-3">
+          <div class="flex flex-row mt-24 space-x-4 py-12">
             <label class="block w-full">
               <span class="block text-sm font-medium"
                 >Reason if not approved:</span
               >
               <textarea
-                class="mt-1 py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                class="mt-2  py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
               ></textarea>
             </label>
 
             <label class="block w-full">
               <span class="block text-sm font-medium">Stamp: </span>
               <textarea
-                class="mt-1 py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
+                class="mt-2 py-2 h-36 w-full rounded border border-black bg-white px-4 focus:outline-crvsblue-700"
               ></textarea>
             </label>
           </div>
@@ -914,20 +913,23 @@
     </div>
   </div>
 
+  <!-- html2pdf CDN-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
     button.addEventListener("click", function () {
-      var opt = {
-        filename: "Death-Form",
-      };
-      html2pdf().set(opt).from(makepdf).save();
+      $(makepdf).printThis({
+        removeInline:true,
+        header: null,
+        footer: null,
+        pageTitle: "Marriage Late Form"
+      });
     });
   </script>
-
-  <!-- html2pdf CDN-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
   <script>
