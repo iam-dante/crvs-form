@@ -11,7 +11,7 @@
     /> -->
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
-    <title>Marriage Registration</title>
+    <title>Divorce Registration</title>
   </head>
   <body class="bg-slate-100">
     <main id="mainpage" class="min-h-screen bg-slate-100 mt-4">
@@ -20,7 +20,7 @@
         class="py-2 w-full flex-col flex justify-center items-center space-y-2"
       >
         <h class="uppercase font-bold text-center px-2 md:text-xl"
-          >Divorced Registration</h
+          >Divorce Registration</h
         >
         <div class="flex justify-center flex-col">
           <img src="./image/header-logo.png" class="h-28 w-36" />
@@ -40,7 +40,7 @@
               <span
                 class="hidden md:block stepper-head-text md:text-xl uppercase text-black text-sm"
               >
-               Husband details
+                Husband details
               </span>
             </button>
 
@@ -48,7 +48,44 @@
               <div class="space-y-4">
                 <div class="border-b-2 border-crvsblue-700 py-2 px-4">
                   <h class="text-xl font-semibold uppercase">
-                    Divorced information</h
+                    Marriage information</h
+                  >
+                </div>
+
+                <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
+                  <label class="block w-full">
+                    <span class="block text-base font-light">
+                      <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                      Select marriage number</span
+                    >
+
+                    <select
+                      class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                    >
+                      <option>Select marriage number</option>
+                      <option>Book Number</option>
+                      <option>Event Number</option>
+                    </select>
+                  </label>
+
+                  <label class="block w-full">
+                    <span class="block text-base font-light">
+                      <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                      Event | Book Number</span
+                    >
+
+                    <input
+                      type="number"
+                      class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                      placeholder="Event Number | Book Number"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                  <h class="text-xl font-semibold uppercase">
+                    Divorce information</h
                   >
                 </div>
 
@@ -82,7 +119,7 @@
                   <label class="block w-full">
                     <span class="block text-base font-light">
                       <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                      Divorced Date</span
+                      Divorce Date</span
                     >
 
                     <input
@@ -91,7 +128,6 @@
                       placeholder="Id number"
                     />
                   </label>
-                 
                 </div>
               </div>
 
@@ -478,7 +514,7 @@
                     <div class="grid gap-8 px-6 md:grid-cols-3">
                       <label class="flex w-full flex-col justify-center">
                         <span class="block text-center text-base font-medium"
-                          >Previous Divorced</span
+                          >Previous Divorce</span
                         >
                         <div class="mt-3 flex flex-row space-x-6">
                           <div class="flex w-full flex-col items-center">
@@ -489,7 +525,7 @@
 
                       <label class="block w-full">
                         <span class="block text-base font-light">
-                          Divorced Order</span
+                          Divorce Order</span
                         >
                         <input
                           type="text"
@@ -939,7 +975,7 @@
 
                         <label class="block w-full">
                           <span class="block text-base font-medium"
-                            >Prevously Divorced ?</span
+                            >Prevously Divorce ?</span
                           >
                           <select
                             class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
@@ -980,7 +1016,7 @@
 
                         <label class="block w-full">
                           <span class="block text-base font-light">
-                            Divorced Order</span
+                            Divorce Order</span
                           >
                           <input
                             type="text"
@@ -1262,86 +1298,6 @@
                       </label>
                     </div>
                   </div>
-
-                  <div class="space-y-4">
-                    <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                      <h class="text-xl font-semibold uppercase">
-                        wife gurdian/ a person has authority to marry</h
-                      >
-                    </div>
-
-                    <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
-                      <label class="block w-full">
-                        <span class="block text-base font-light">ID Type:</span>
-                        <select
-                          class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                        >
-                          <option>Select type of ID</option>
-                        </select>
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                          ID Number</span
-                        >
-
-                        <input
-                          type="number"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Id number"
-                        />
-                      </label>
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                          First Name</span
-                        >
-
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="First Name"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                          Middle Name</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Middle Name"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                          SurName</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="SurName"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                          Signature</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Signature"
-                        />
-                      </label>
-                    </div>
-                  </div>
                 </div>
 
                 <div class="flex h-20 w-full justify-between">
@@ -1408,7 +1364,44 @@
                 <div class="space-y-4">
                   <div class="border-b-2 border-crvsblue-700 py-2 px-4">
                     <h class="text-xl font-semibold uppercase">
-                      Divorced information</h
+                      Marriage information</h
+                    >
+                  </div>
+
+                  <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
+                    <label class="block w-full">
+                      <span class="block text-base font-light">
+                        <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                        Select marriage number</span
+                      >
+
+                      <select
+                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                      >
+                        <option>Select marriage number</option>
+                        <option>Book Number</option>
+                        <option>Event Number</option>
+                      </select>
+                    </label>
+
+                    <label class="block w-full">
+                      <span class="block text-base font-light">
+                        <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                        Event | Book Number</span
+                      >
+
+                      <input
+                        type="number"
+                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                        placeholder="Event Number | Book Number"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                    <h class="text-xl font-semibold uppercase">
+                      Divorce information</h
                     >
                   </div>
 
@@ -1442,7 +1435,7 @@
                     <label class="block w-full">
                       <span class="block text-base font-light">
                         <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                        Divorced Date</span
+                        Divorce Date</span
                       >
 
                       <input
@@ -1451,7 +1444,6 @@
                         placeholder="Id number"
                       />
                     </label>
-                   
                   </div>
                 </div>
 
@@ -1848,7 +1840,7 @@
                       <div class="grid gap-8 px-6 md:grid-cols-3">
                         <label class="flex w-full flex-col justify-center">
                           <span class="block text-center text-base font-medium"
-                            >Previous Divorced</span
+                            >Previous Divorce</span
                           >
                           <div class="mt-3 flex flex-row space-x-6">
                             <div class="flex w-full flex-col items-center">
@@ -1859,7 +1851,7 @@
 
                         <label class="block w-full">
                           <span class="block text-base font-light">
-                            Divorced Order</span
+                            Divorce Order</span
                           >
                           <input
                             type="text"
@@ -2281,7 +2273,7 @@
 
                               <label class="block w-full">
                                 <span class="block text-base font-medium"
-                                  >Prevously Divorced ?</span
+                                  >Prevously Divorce ?</span
                                 >
                                 <select
                                   class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
@@ -2322,7 +2314,7 @@
 
                               <label class="block w-full">
                                 <span class="block text-base font-light">
-                                  Divorced Order</span
+                                  Divorce Order</span
                                 >
                                 <input
                                   type="text"
@@ -2339,114 +2331,10 @@
                 </div>
 
                 <form class="space-y-8">
-                <div class="space-y-4">
-                  <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                    <h class="text-xl font-semibold uppercase"
-                      >witness information</h
-                    >
-                  </div>
-
-                  <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
-                    <label class="block w-full">
-                      <span class="block text-base font-light">ID Type:</span>
-                      <select
-                        class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                      >
-                        <option>Select type of ID</option>
-                      </select>
-                    </label>
-
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                        ID Number</span
-                      >
-
-                      <input
-                        type="number"
-                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                        placeholder="Id number"
-                      />
-                    </label>
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                        First Name</span
-                      >
-
-                      <input
-                        type="text"
-                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                        placeholder="First Name"
-                      />
-                    </label>
-
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium">Jina la kati /</span> -->
-                        Middle Name</span
-                      >
-                      <input
-                        type="text"
-                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                        placeholder="Middle Name"
-                      />
-                    </label>
-
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                        SurName</span
-                      >
-                      <input
-                        type="text"
-                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                        placeholder="SurName"
-                      />
-                    </label>
-
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                        Signature</span
-                      >
-                      <input
-                        type="text"
-                        class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                        placeholder="Signature"
-                      />
-                    </label>
-
-                    <label class="block w-full">
-                      <span class="block text-base font-light">
-                        <!-- <span class="font-medium"> Jinsia /</span> -->
-                        Gender</span
-                      >
-
-                      <div class="mt-3 flex flex-row space-x-6">
-                        <div class="flex flex-col items-center">
-                          <input type="radio" class="h-4 w-4" />
-                          <span class="block text-base font-light">
-                            <!-- <span class="font-medium">Mume /</span> -->
-                            Male</span
-                          >
-                        </div>
-
-                        <div class="flex flex-col items-center">
-                          <input type="radio" class="h-4 w-4" />
-                          <span class="block text-base font-light">
-                            <!-- <span class="font-medium">Mke /</span> -->
-                            Female</span
-                          >
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-
                   <div class="space-y-4">
                     <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                      <h class="text-xl font-semibold uppercase">
-                        another witness</h
+                      <h class="text-xl font-semibold uppercase"
+                        >witness information</h
                       >
                     </div>
 
@@ -2546,91 +2434,118 @@
                         </div>
                       </label>
                     </div>
-                  </div>
 
-                  <div class="space-y-4">
-                    <div class="border-b-2 border-crvsblue-700 py-2 px-4">
-                      <h class="text-xl font-semibold uppercase">
-                        wife gurdian/ a person has authority to marry</h
+                    <div class="space-y-4">
+                      <div class="border-b-2 border-crvsblue-700 py-2 px-4">
+                        <h class="text-xl font-semibold uppercase">
+                          another witness</h
+                        >
+                      </div>
+
+                      <div
+                        class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4"
                       >
+                        <label class="block w-full">
+                          <span class="block text-base font-light"
+                            >ID Type:</span
+                          >
+                          <select
+                            class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
+                          >
+                            <option>Select type of ID</option>
+                          </select>
+                        </label>
+
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                            ID Number</span
+                          >
+
+                          <input
+                            type="number"
+                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                            placeholder="Id number"
+                          />
+                        </label>
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium">Jina la kwanza /</span> -->
+                            First Name</span
+                          >
+
+                          <input
+                            type="text"
+                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                            placeholder="First Name"
+                          />
+                        </label>
+
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium">Jina la kati /</span> -->
+                            Middle Name</span
+                          >
+                          <input
+                            type="text"
+                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                            placeholder="Middle Name"
+                          />
+                        </label>
+
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
+                            SurName</span
+                          >
+                          <input
+                            type="text"
+                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                            placeholder="SurName"
+                          />
+                        </label>
+
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium">Jina la Ukoo /</span> -->
+                            Signature</span
+                          >
+                          <input
+                            type="text"
+                            class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+                            placeholder="Signature"
+                          />
+                        </label>
+
+                        <label class="block w-full">
+                          <span class="block text-base font-light">
+                            <!-- <span class="font-medium"> Jinsia /</span> -->
+                            Gender</span
+                          >
+
+                          <div class="mt-3 flex flex-row space-x-6">
+                            <div class="flex flex-col items-center">
+                              <input type="radio" class="h-4 w-4" />
+                              <span class="block text-base font-light">
+                                <!-- <span class="font-medium">Mume /</span> -->
+                                Male</span
+                              >
+                            </div>
+
+                            <div class="flex flex-col items-center">
+                              <input type="radio" class="h-4 w-4" />
+                              <span class="block text-base font-light">
+                                <!-- <span class="font-medium">Mke /</span> -->
+                                Female</span
+                              >
+                            </div>
+                          </div>
+                        </label>
+                      </div>
                     </div>
 
-                    <div class="grid gap-8 px-6 md:grid-cols-3 lg:grid-cols-4">
-                      <label class="block w-full">
-                        <span class="block text-base font-light">ID Type:</span>
-                        <select
-                          class="mt-1 h-10 w-full rounded border border-slate-400 bg-white px-4 focus:outline-crvsblue-700"
-                        >
-                          <option>Select type of ID</option>
-                        </select>
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                          ID Number</span
-                        >
-
-                        <input
-                          type="number"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Id number"
-                        />
-                      </label>
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kwanza /</span> -->
-                          First Name</span
-                        >
-
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="First Name"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la kati /</span> -->
-                          Middle Name</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Middle Name"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                          SurName</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="SurName"
-                        />
-                      </label>
-
-                      <label class="block w-full">
-                        <span class="block text-base font-light">
-                          <!-- <span class="font-medium">Jina la Ukoo /</span> -->
-                          Signature</span
-                        >
-                        <input
-                          type="text"
-                          class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
-                          placeholder="Signature"
-                        />
-                      </label>
-                    </div>
                   </div>
-                </div>
-
-              
-              </form>
+                </form>
 
                 <div class="flex h-20 w-full justify-between">
                   <button
