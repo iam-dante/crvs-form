@@ -727,7 +727,9 @@
     
     button.addEventListener("click", function () {
       $(makepdf).printThis({
-        
+        removeInline:true,
+        header: null,
+        footer: null,
         pageTitle: "Marriage Late Form"
       });
     });
