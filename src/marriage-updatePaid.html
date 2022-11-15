@@ -712,17 +712,14 @@
     </div>
   </div>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
+ <script src="./js/printThis.js"></script>
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
     button.addEventListener("click", function () {
       $(makepdf).printThis({
-        removeInline:true,
-        header: null,
-        footer: null,
-        importCSS: true,
+       
         pageTitle: "Marriage Late Form"
       });
     });
