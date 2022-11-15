@@ -712,21 +712,24 @@
     </div>
   </div>
 
- <script src="./js/printThis.js"></script>
-  <script>
-    var button = document.getElementById("download");
-    var makepdf = document.getElementById("form");
-
-    button.addEventListener("click", function () {
-      $(makepdf).printThis({
-       
-        pageTitle: "Marriage Late Form"
-      });
-    });
-  </script>
+ 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
   <script>
     // Barcode
     JsBarcode("#barcode", "84865847889893");
   </script>
+   <!-- <script src="./js/printThis.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
+   
+  <script>
+    var button = document.getElementById("download");
+    var makepdf = document.getElementById("form");
+    
+    button.addEventListener("click", function () {
+      $(makepdf).printThis({
+        
+        pageTitle: "Marriage Late Form"
+      });
+    });
+    </script>
 </html>
