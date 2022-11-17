@@ -238,7 +238,6 @@ $(document).ready(function () {
     $("#marrSumDiv ").attr("style", "display: none");
   });
 
-
   $("#attmarrNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
 
@@ -250,5 +249,84 @@ $(document).ready(function () {
     $("#attmarrDiv").attr("style", "display: block");
     $("#witDiv").attr("style", "display: none");
     $("#witId").addClass("stepper-completed");
+  });
+
+  //Adoption
+  $("#adoFatherNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#adoFatherId").addClass("stepper-active");
+    $("#childId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#adoFatherDiv").attr("style", "display: block");
+    $("#childDiv").attr("style", "display: none");
+    $("#childId").addClass("stepper-completed");
+  });
+
+  $("#prevadoChild").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#childId").addClass("stepper-active");
+    $("#adoFatherId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#childDiv").attr("style", "display: block");
+    $("#adoFatherDiv").attr("style", "display: none");
+    $("#adoFatherId").addClass("stepper-completed");
+  });
+
+  $("#adoMotherNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#adoMotherId").addClass("stepper-active");
+    $("#adoFatherId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#adoMotherDiv").attr("style", "display: block");
+    $("#adoFatherDiv").attr("style", "display: none");
+    $("#adoFatherId").addClass("stepper-completed");
+  });
+
+  $("#prevadoFather").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#adoFatherId ").addClass("stepper-active");
+    $("#adoMotherId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#adoFatherDiv").attr("style", "display: block");
+    $("#adoMotherDiv").attr("style", "display: none");
+    $("#adoMotherId").addClass("stepper-completed");
+  });
+
+  $("#adoSumNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#adoSumId ").addClass("stepper-active");
+    $("#adoMotherId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#adoSumDiv").attr("style", "display: block");
+    $("#adoMotherDiv").attr("style", "display: none");
+    $("#adoMotherId").addClass("stepper-completed");
+  });
+
+  $("#prevadoMother").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
+
+    $("#adoMotherId").addClass("stepper-active");
+    $("#adoSumId").removeClass("stepper-active");
+
+    // $(".heightstepper").attr("style", "height: 1100px");
+
+    $("#adoMotherDiv").attr("style", "display: block");
+    $("#adoSumDiv").attr("style", "display: none");
+    $("#adoMotherId").addClass("stepper-completed");
   });
 });
