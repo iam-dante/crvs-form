@@ -124,15 +124,13 @@
       </div>
 
       <div class="flex justify-between items-end">
-
-         <div class="space-y-2">
+        <div class="space-y-2">
           <canvas id="barcode" class=""></canvas>
-  
+
           <label class="flex items-baseline space-x-2">
             <span class="font-semi">Nambari ya Fomu: </span>
             <input class="mt-1 h-8 border-b border-dotted border-black px-4" />
           </label>
-
         </div>
 
         <div
@@ -143,9 +141,9 @@
       </div>
 
       <p class="text-center">
-        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa kifo kutoka
-        kwa sheha, na stakabashi(risiti) ya mauzoya fomu hii, na mtoa
-        taarifa na hati nyengine yoyote itakayoidhinishwa na afisa usajili
+        Fomu hii lazima iambatanishwe na barua ya uthibitisho wa kifo kutoka kwa
+        sheha, na stakabashi(risiti) ya mauzoya fomu hii, na mtoa taarifa na
+        hati nyengine yoyote itakayoidhinishwa na afisa usajili
       </p>
 
       <div
@@ -781,7 +779,8 @@
         <div class="border-l border-b border-r border-black p-2 space-y-4">
           <div class="py-2">
             <p>
-              MIMI ..............................................................................
+              MIMI
+              ..............................................................................
               Nathibitisha kuwa maelezo yote nilioyatowa hapo juu ni kweli tupu
               kadiri ya kuelewa kwangu nafahamu kwamba kutoa taarifa yoyote ya
               uongo ni kwenda kinyume na sheria za zanzibar na kwamba hatua za
@@ -846,8 +845,10 @@
 
           <div class="py-6 border-t border-black">
             <p class="">
-              MIMI ......................................................................... Mkuu
-              wa viapo,katika afisi ya ...........................................................................
+              MIMI
+              .........................................................................
+              Mkuu wa viapo,katika afisi ya
+              ...........................................................................
               nathibitisha kuwa mtoa taarifa hizi amekiri na kuthibitisha kuwa
               yote aliyoyaeleza ni kweli na yuko tayari kuchukuliwa hatua za
               kisheri endapo taarifa hizo zitapobainika kuwa sio sahihi
@@ -1107,21 +1108,27 @@
     </div>
   </div>
 
+  <!-- print thisjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
+
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
     button.addEventListener("click", function () {
-      var opt = {
-        filename: "Death-Form",
-      };
-      html2pdf().set(opt).from(makepdf).save();
+      $(makepdf).printThis({
+        // removeInline:true,
+        // header: null,
+        // footer: null,
+        importCSS: true,
+        pageTitle: "Birth Registration Late Form",
+      });
     });
   </script>
 
-  <!-- html2pdf CDN-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
- 
+  <!-- html2pdf CDN
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
   <script>
     // Barcode

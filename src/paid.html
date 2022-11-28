@@ -124,15 +124,13 @@
       </div>
 
       <div class="flex justify-between items-end">
-
         <div class="space-y-2">
           <canvas id="barcode" class=""></canvas>
-  
+
           <label class="flex items-baseline space-x-2">
             <span class="font-semi">Nambari ya Fomu: </span>
             <input class="mt-1 h-8 border-b border-dotted border-black px-4" />
           </label>
-
         </div>
 
         <div
@@ -163,7 +161,7 @@
 
       <div class="pt-10">
         <div
-          class="h-16  bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 bg-slate-300 w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h> a.taarifa za muombaji (ijazwe na mtoa taarifa)</h>
         </div>
@@ -1030,9 +1028,9 @@
       </div>
 
       <!-- registar goveement officer -->
-      <div>
+      <div class="pt-24">
         <div
-          class="h-16 bg-slate-300 mt-14 w-full flex items-center justify-center border border-black uppercase font-semibold"
+          class="h-16 bg-slate-300  w-full flex items-center justify-center border border-black uppercase font-semibold"
         >
           <h>
             f. ijazwe na afisa wa afisi ya wakala wa usajili wa matukio ya
@@ -1223,7 +1221,7 @@
               </div>
             </label>
           </div>
-          <div class="grid md:grid-cols-2 gap-3">
+          <div class="grid grid-cols-2 gap-3">
             <label class="block w-full">
               <span class="block text-sm font-medium"
                 >Reason if not approved:</span
@@ -1245,27 +1243,99 @@
     </div>
   </div>
 
-  
+  <!-- print thisjs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
+
+  <!-- cdnjs -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.2.2/html2canvas.min.js" integrity="sha512-LAy9JsHauh0F7L/awqsQUZAulUZxlnaJdvTPysAC7eip4Z0lMnKxP1rwx9kZDrQIWFOiiukaFupzaRHiyRRnxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js" integrity="sha512-adgfzougYIGhG3Tpb47fZLuMwaULLJQdujqOeWFoGc7vwFvBrFkhaPkJPId5swgdr122mghL/ysQk4oiabmRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js" integrity="sha512-adgfzougYIGhG3Tpb47fZLuMwaULLJQdujqOeWFoGc7vwFvBrFkhaPkJPId5swgdr122mghL/ysQk4oiabmRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js" integrity="sha512-5yTVoG0jFRsDhgYEoKrZCj5Bazxqa0VnETLN7k0SazQcARBsbgrSb6um+YpzWKNKV2kjb8bhna4fDfOk3YPr4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.6/pdfmake.min.js"
+    integrity="sha512-7BzHjLXs8xehClrkJEtJtAwXxcbLast87k+XekuItHxrMr/v6POWkoKS2/8CU6DHdIjY+A4NwvsBQ8PxoRH7xQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script> -->
+
+  <!-- <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script> -->
+  <!-- <script src="https://printjs-4de6.kxcdn.com/print.min.css"></script>  -->
+
+  
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
+    // button.addEventListener("click", function () {
+    //   // pdfMake.createPdf(makepdf).download();
+    //   // pdfMake.createPdf(docDefinition).print({}, window);
+    //   printJS({printable:"form", type:"html", css: "../dist/output.css", onPdfOpen:true, documentTitle:"Birth Registration Late Form"})
+    // });
+
     button.addEventListener("click", function () {
       $(makepdf).printThis({
-        removeInline:true,
-        header: null,
-        footer: null,
+        // removeInline:true,
+        // header: null,
+        // footer: null,
         importCSS: true,
-        pageTitle: "Birth Late Form"
+        pageTitle: "Birth Registration Late Form",
       });
     });
+
+    // button.addEventListener("click", function () {
+    //   var opt = {
+
+    //     filename: "Birth Late Form.pdf",
+    //     image: { type: "jpeg", quality: 0.98 },
+    //     html2canvas: { scale: 1 },
+    //     // jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+    //   };
+
+    //   // New Promise-based usage:
+    //   html2pdf().set(opt).from(makepdf).save();
+    // });
+
+    //Other methods
+    // button.addEventListener("click", function () {
+    //   // // Bring the page zoom level back to 100%
+    //   // const scale = window.innerWidth / window.outerWidth;
+    //   // if (scale != 1) {
+    //   //   document.body.style.zoom = scale;
+    //   // }
+
+    //   window.jsPDF = window.jspdf.jsPDF;
+    //   // const { jsPDF } = window.jspdf;
+    //   var doc = new jsPDF({
+    //     orientation: "p",
+    //     unit: "pt",
+    //     format: "a4",
+    //     putOnlyUsedFonts:true,
+    //     precision:3
+    //     // putOnlyUsedFonts: true,
+    //   });
+
+    //   // var pdfjs = document.querySelector("#form");
+
+    //   // Convert HTML to PDF in JavaScript
+    //   // doc.setFont("DM Sans", "sans-serif", "normal")
+    //   doc.html(makepdf, {
+    //     html2canvas: {
+    //       scale: 0.75, // default is window.devicePixelRatio
+    //     },
+    //     callback: function (doc) {
+    //       // doc.save("output.pdf");
+    //       window.open(doc.output('bloburl'))
+    //     },
+
+    //   });
+    // });
   </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.js"></script>
   <script>
     // Barcode
     JsBarcode("#barcode", "84865847889893");
   </script>
-
 </html>
