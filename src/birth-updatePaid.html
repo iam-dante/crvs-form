@@ -700,21 +700,31 @@
       </div>
     </div>
   </div>
-
+<!-- print thisjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js"></script>
   <script>
     var button = document.getElementById("download");
     var makepdf = document.getElementById("form");
 
+    // button.addEventListener("click", function () {
+    //   // pdfMake.createPdf(makepdf).download();
+    //   // pdfMake.createPdf(docDefinition).print({}, window);
+    //   printJS({printable:"form", type:"html", css: "../dist/output.css", onPdfOpen:true, documentTitle:"Birth Registration Late Form"})
+    // });
+
     button.addEventListener("click", function () {
-      var opt = {
-        filename: "Birth Detail Update Form",
-      };
-      html2pdf().set(opt).from(makepdf).save();
+      $(makepdf).printThis({
+        // removeInline:true,
+        // header: null,
+        // footer: null,
+        importCSS: true,
+        pageTitle: "Birth Registration Late Form",
+      });
     });
   </script>
 
   <!-- html2pdf CDN-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
   <!-- <script
     src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
     integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
