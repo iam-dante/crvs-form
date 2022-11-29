@@ -630,8 +630,8 @@ video {
   margin-top: 6rem;
 }
 
-.mt-40{
-  margin-top: 10rem;
+.mt-44{
+  margin-top: 11rem;
 }
 
 .mt-28{
@@ -658,16 +658,8 @@ video {
   margin-top: 5rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-44{
-  margin-top: 11rem;
 }
 
 .mt-48{
@@ -676,6 +668,10 @@ video {
 
 .mt-16{
   margin-top: 4rem;
+}
+
+.mt-40{
+  margin-top: 10rem;
 }
 
 .block{
