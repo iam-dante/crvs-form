@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../image/header-logo.png" />
+    <title>Check Status</title>
+  </head>
+  <body class="bg-slate-200 w-full mx-auto py-4">
+    <div
+      class="py-2 w-full flex-col flex justify-center items-center space-y-2 mt-4"
+    >
+      <div class="flex justify-center flex-col">
+        <img src="./image/header-logo.png" class="h-28 w-36" />
+      </div>
+      <h class="uppercase font-bold text-center px-2 md:text-xl"
+        >Zanzibar Civil Status Registration Agency (ZCSRA)</h
+      >
+    </div>
+
+    <div class="flex items-center justify-center mt-6">
+      <h class="uppercase font-semibold text-xl text-sky-700 text-center"
+        >Check Application Status</h
+      >
+    </div>
+
+    <div class="w-full px-4 xl:px-72 mt-12">
+      <div
+        class="bg-green-200 w-full py-4 border-2 border-green-700 rounded-md space-x-4 flex items-center px-4"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 text-green-800"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
+          />
+        </svg>
+
+        <h class="font-robot text-sm md:text-lg text-green-800 font-bold"
+          >Your Application is currently in Assesment</h
+        >
+      </div>
+    </div>
+    <div
+      class="grid md:grid-cols-1 lg:grid-cols-2 mt-8 xl:px-72 px-4 w-full gap-3"
+    >
+      <div>
+        <div
+          class="group py-4 w-full bg-white px-2 xl:px-4 xl:py-6 space-y-2 drop-shadow-md rounded-md"
+        >
+          <div class="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="text-sky-700  h-8 w-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+              />
+            </svg>
+
+            <h class="font-light text-lg whitespace-nowrap text-sky-700">
+              <h class="font-medium">Angalia Hali /</h>Check Status
+            </h>
+          </div>
+          <p class="px-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+      </div>
+
+      <div class="py-6 bg-white px-4 drop-shadow-md rounded-md">
+        <div class="md:px-4 space-y-4 flex py-2 flex-col w-full">
+          <label class="block w-full">
+            <span class="block font-light whitespace-nowrap">
+              <span class="font-medium">Tukio limekata rufaa /</span>
+              Event Appealed</span
+            >
+            <select
+              class="mt-1 h-10 w-full rounded border border-slate-400 px-4 bg-white focus:outline-crvsblue-700"
+            >
+              <option></option>
+            </select>
+          </label>
+          <label class="block w-full">
+            <span class="required block text-base font-light">
+              <span class="font-medium">Nambari ya kumbukumbu /</span>
+              Reference Number</span
+            >
+            <input
+              type="number"
+              class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+              placeholder=" Reference Number"
+            />
+          </label>
+
+          <label class="block w-full">
+            <span class="required block text-base font-light">
+              <span class="font-medium">Nambari ya simu/</span>
+              Phone Number</span
+            >
+            <input
+              type="tel"
+              class="mt-1 h-10 w-full rounded border border-slate-400 px-4 focus:outline-crvsblue-700"
+              placeholder="Phone Number"
+            />
+          </label>
+
+          <a
+            href=""
+            class="py-2 w-full text-center font-semibold text-white hover:bg-transparent hover:text-crvsblue-700 uppercase rounded border border-slate-400 px-4 bg-sky-800"
+          >
+            submit
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
